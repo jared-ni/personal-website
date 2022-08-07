@@ -27,6 +27,8 @@
     font-size: 2rem;
     position: absolute;
     padding: 15px;
+    display: flex;
+    flex-direction: row;
   }
 
   @keyframes word-hover {
@@ -35,17 +37,29 @@
       border-width: thick;
       font-size: 1.5rem;}
   }
+
+  .hidden-arrow {
+    display: none;
+    flex-direction: row;
+    color: #D9B08C;
+  }
   .navbar-logo:hover {
+    display: flex;
+    flex-direction: row;
     color: #D9B08C;
     border-top: 3px solid #D9B08C;
     border-bottom: 3px solid #D9B08C;
     border-width: thin;
-    /* padding: 15px; */
     animation-name: word-hover;
     animation-iteration-count: infinite;
     animation-duration: 2.1s;
     animation-direction: alternate;
   }
+
+  .navbar-logo:hover .hidden-arrow {
+    display: inline;
+  }
+  
   
   /* .fa-typo3 {
     margin-left: 0.5rem;
