@@ -1,0 +1,116 @@
+:root {
+  --background-color: #2c3531;
+  --typewriter-speed: 2s;
+}
+
+  .hero-container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #2c3531;
+    object-fit: contain;
+  }
+  
+  h1 {
+    margin-top: 0px;
+    font-family: 'Source Code Pro', monospace;
+    color: #fff;
+    font-size: 100px;
+    position: relative;
+    width: max-content;
+  }
+  h1::before,
+  h1::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  h1::before {
+    background: var(--background-color);
+    animation: typewriter var(--typewriter-speed) steps(12) 1s forwards;
+  }
+  h1::after {
+    width: 0.05em;
+    background: #fff;
+    animation: 
+      typewriter var(--typewriter-speed) steps(12) 1s forwards,
+      blink 1s step-start infinite;
+  }
+
+  @keyframes typewriter {
+    to {
+      left: 100%;
+    }
+  }
+
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+
+  
+  p {
+    margin-top: 8px;
+    color: #fff;
+    font-size: 32px;
+    font-family: 'source code pro', monospace;
+    position: relative;
+    width: max-content;
+  }
+  p::before,
+  p::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  p::before {
+    background: var(--background-color);
+    animation: typewriter 1s steps(20) 4s forwards;
+  }
+
+
+  
+  .heroImage {
+    width: 150px;
+    margin-top: -200px;
+    clip-path: circle();
+    vertical-align: bottom;
+  }
+  
+  @media screen and (max-width: 950px) {
+    .heroImage {
+      margin-top: -200px;
+    }
+    h1 {
+      font-size: 50px;
+      margin-top: 50px;
+    }
+    p {
+      font-size: 30px;
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    .heroImage {
+      width: 30vw;
+      margin-top: -300px;
+    }
+    h1 {
+      font-size: 10vw;
+      margin-top: 50px;
+    }
+    p {
+      font-size: 5vw;
+    }
+  }
+  

@@ -10,14 +10,6 @@
     border-bottom: 0.5vh solid #D9B08C;
   }
   
-  /* .navbar-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80px;
-    max-width: 1500px;
-  } */
-  
   .navbar-logo {
     color: #fff;
     justify-self: start;
@@ -116,30 +108,11 @@
   
   /* Small view */
   @media screen and (max-width: 950px) {
-    .NavbarItems {
-      position: relative;
-    }
     .navbar-logo {
       position: relative;
       margin-left: auto; 
       margin-right: auto;
     }
-  
-    /* @keyframes fold-menu {
-      0% {
-        top: 100px;
-        height: 400px
-      }
-      50% {
-        height: 0;
-        display: none;
-      }
-      100% {
-        top: -100px;
-        height: 0px;
-        display: none;
-      }
-    } */
     .nav-menu {
       /* display: none; */
       flex-direction: column;
@@ -156,12 +129,13 @@
     .nav-menu.active {
       top: 100px;
       display: inline;
-      background: #2c3531;
+      background: #000;
       opacity: 0.8;
       height: 400px;
       transition-property: height;
       transition: 0.5s ease;
       z-index: 10;
+      margin-bottom: 400px;
     }
     .nav-links {
       display: none;
@@ -178,7 +152,6 @@
       color: #ffcb9a;
     }
     
-  
     .nav-links:hover {
       color: #fff;
       font-size: 1.7rem;
@@ -212,9 +185,6 @@
         border-width: thick;
         font-size: 1rem;}
     }
-    .navbar {
-      height: 70px;
-    }
     .navbar-logo {
       font-size: 1.5rem;
       padding: 0;
@@ -222,18 +192,6 @@
     .navbar-logo:hover {
       animation-name: word-hover-mobile;
     }
-    .nav-menu {
-      top: 70px;
-    }
-    .nav-links {
-      text-align: center;
-      font-size: 0.9rem;
-      width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-  
     .nav-links:hover {
       color: #fff;
       font-size: 1.1rem;
