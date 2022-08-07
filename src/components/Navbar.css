@@ -1,0 +1,207 @@
+.navbar {
+    background: #2c3531;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    position: relative;
+    top: 0;
+    z-index: 100;
+    border-bottom: 0.5vh solid #D9B08C;
+  }
+  
+  /* .navbar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    max-width: 1500px;
+  } */
+  
+  .navbar-logo {
+    color: #fff;
+    justify-self: start;
+    margin-left: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+    position: absolute;
+    padding: 15px;
+  }
+
+  @keyframes word-hover {
+    0% {}
+    100% {padding: 20px; 
+      border-width: thick;
+      font-size: 1.5rem;}
+  }
+  .navbar-logo:hover {
+    color: #D9B08C;
+    border-top: 3px solid #D9B08C;
+    border-bottom: 3px solid #D9B08C;
+    border-width: thin;
+    /* padding: 15px; */
+    animation-name: word-hover;
+    animation-iteration-count: infinite;
+    animation-duration: 2.1s;
+    animation-direction: alternate;
+  }
+  
+  /* .fa-typo3 {
+    margin-left: 0.5rem;
+    font-size: 1.8rem;
+  } */
+  
+  .nav-menu {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 5px;
+    list-style: none;
+    text-align: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Boxes for the top bar grids */
+  .nav-item {
+    padding: 10px;
+    height: 100px;
+  }
+  
+  .nav-links {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    height: 100%;
+    font-size: 1.2rem;
+  }
+  
+  .nav-links:hover {
+    color: #ffcb9a;
+    border-top: thin solid #ffcb9a;
+    animation-name: word-hover;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-direction: alternate;
+  }
+  
+  .fa-bars {
+    color: #fff;
+  }
+  
+  /* .nav-links-mobile {
+    display: none;
+  } */
+  
+  .menu-icon {
+    display: none;
+  }
+  
+  /* Small view */
+  @media screen and (max-width: 900px) {
+    .NavbarItems {
+      position: relative;
+    }
+    .navbar-logo {
+      position: relative;
+      margin-left: auto; 
+      margin-right: auto;
+    }
+  
+    .nav-menu {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 300px;
+      position: absolute;
+      top: 100px;
+      right: -100%;
+      opacity: 1;
+      transition: all 0.3s ease-out;
+    }
+  
+    .nav-menu.active {
+      background: #2c3531;
+      right: 0;
+      opacity: 0.8;
+      transition: all 0.3s ease-out;
+      z-index: 1;
+    }
+  
+    .nav-links {
+      text-align: center;
+      font-size: 1.5rem;
+      padding: 0.2vh;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffcb9a;
+    }
+  
+    .nav-links:hover {
+      color: #fff;
+      font-size: 1.7rem;
+      border-radius: 0.1vw;
+      border-top: 0px;
+      border-right: 2px solid #fff;
+      border-left: 2px solid #fff;
+    }
+  
+    /* Hamburger button */
+    .menu-icon {
+      display: block;
+      position: absolute;
+      align-self: center;
+      font-size: 1.8rem;
+      right: 4%;
+      cursor: pointer;
+    }
+    /* x button */
+    .fa-times {
+      color: #fff;
+      font-size: 2rem;
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    @keyframes word-hover-mobile {
+      0% {}
+      100% {padding: 5px; 
+        border-width: thick;
+        font-size: 1rem;}
+    }
+    .navbar {
+      height: 70px;
+    }
+    .navbar-logo {
+      font-size: 1.5rem;
+      padding: 0;
+    }
+    .navbar-logo:hover {
+      animation-name: word-hover-mobile;
+    }
+    .nav-menu {
+      top: 70px;
+    }
+    .nav-links {
+      text-align: center;
+      font-size: 0.9rem;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .nav-links:hover {
+      color: #fff;
+      font-size: 1.1rem;
+      border-radius: 0.1vw;
+      border-top: 0px;
+      border-right: 2px solid #fff;
+      border-left: 2px solid #fff;
+    }
+  }
