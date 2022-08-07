@@ -21,6 +21,7 @@
     font-size: 100px;
     position: relative;
     width: max-content;
+    z-index: 10;
   }
   h1::before,
   h1::after {
@@ -63,6 +64,7 @@
     font-family: 'source code pro', monospace;
     position: relative;
     width: max-content;
+    z-index: 10;
   }
   p::before,
   p::after {
@@ -80,12 +82,28 @@
 
 
   
+  @keyframes intro {
+    0% {
+      opacity: 0;
+      margin-bottom: -500px;
+      z-index: 1;
+    }
+    75% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
   .heroImage {
     width: 150px;
     margin-top: -200px;
     clip-path: circle();
     vertical-align: bottom;
+    animation: intro 0.8s ease-out;;
+    z-index: 50;
   }
+  
   
   @media screen and (max-width: 950px) {
     .heroImage {
