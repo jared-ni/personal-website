@@ -30,8 +30,8 @@ function Navbar() {
             <nav className='navbar'>
                 
                 <Link to='/' className='navbar-logo'>
-                    Jared Ni
-                    {/* <i class="fa-solid fa-arrow-right-long"></i> */}
+                    Jared Ni &nbsp;
+                    <i class="fa-solid fa-arrow-right-long"></i>
                 </Link>
                 
                 <div className="menu-icon" onClick={handleClick}>
@@ -40,22 +40,22 @@ function Navbar() {
                 
                 <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                     <li className='nav-item'>
-                        <Link to='/' className='nav-links' onClick={closeMobileMenu}>
+                        <Link to='/' className={click ? 'nav-links active' : 'nav-links'} onClick={closeMobileMenu}>
                             About
                         </Link>
                     </li>
                     <li className='nav-item'>
-                        <Link to='/experience' className='nav-links' onClick={closeMobileMenu}>
+                        <Link to='/experience' className={click ? 'nav-links active' : 'nav-links'} onClick={closeMobileMenu}>
                             Experiences
                         </Link>
                     </li>
                     <li className='nav-item'>
-                        <Link to='/blogs' className='nav-links' onClick={closeMobileMenu}>
+                        <Link to='/blogs' className={click ? 'nav-links active' : 'nav-links'} onClick={closeMobileMenu}>
                             Projects
                         </Link>
                     </li>
                     <li className='nav-item'>
-                        <Link to='/contact' className='nav-links' onClick={closeMobileMenu}>
+                        <Link to='/contact' className={click ? 'nav-links active' : 'nav-links'} onClick={closeMobileMenu}>
                             Contact
                         </Link>
                     </li>

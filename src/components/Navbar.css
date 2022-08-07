@@ -6,7 +6,7 @@
     font-size: 1.4rem;
     position: relative;
     top: 0;
-    z-index: 100;
+    z-index: 1;
     border-bottom: 0.5vh solid #D9B08C;
   }
   
@@ -101,7 +101,7 @@
   }
   
   /* Small view */
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 950px) {
     .NavbarItems {
       position: relative;
     }
@@ -111,27 +111,49 @@
       margin-right: auto;
     }
   
+    /* @keyframes fold-menu {
+      0% {
+        top: 100px;
+        height: 400px
+      }
+      50% {
+        height: 0;
+        display: none;
+      }
+      100% {
+        top: -100px;
+        height: 0px;
+        display: none;
+      }
+    } */
     .nav-menu {
-      display: flex;
+      /* display: none; */
       flex-direction: column;
       width: 100%;
-      height: 300px;
       position: absolute;
+      /* animation-name: fold-menu; */
+      height: 0px;
       top: 100px;
-      right: -100%;
-      opacity: 1;
+      opacity: 0;
       transition: all 0.3s ease-out;
+      z-index: 10;
     }
   
     .nav-menu.active {
+      top: 100px;
+      display: inline;
       background: #2c3531;
-      right: 0;
       opacity: 0.8;
-      transition: all 0.3s ease-out;
-      z-index: 1;
+      height: 400px;
+      transition-property: height;
+      transition: 0.5s ease;
+      z-index: 10;
     }
-  
     .nav-links {
+      display: none;
+    }
+    .nav-links.active {
+      display: none;
       text-align: center;
       font-size: 1.5rem;
       padding: 0.2vh;
@@ -141,6 +163,7 @@
       justify-content: center;
       color: #ffcb9a;
     }
+    
   
     .nav-links:hover {
       color: #fff;
@@ -154,6 +177,7 @@
     /* Hamburger button */
     .menu-icon {
       display: block;
+      color: #fff;
       position: absolute;
       align-self: center;
       font-size: 1.8rem;
