@@ -34,13 +34,13 @@
   }
   h1::before {
     background: var(--background-color);
-    animation: typewriter var(--typewriter-speed) steps(12) 1s forwards;
+    animation: typewriter var(--typewriter-speed) steps(12) forwards;
   }
   h1::after {
     width: 0.05em;
     background: #fff;
     animation: 
-      typewriter var(--typewriter-speed) steps(12) 1s forwards,
+      typewriter var(--typewriter-speed) steps(12) forwards,
       blink 1s step-start infinite;
   }
 
@@ -55,11 +55,10 @@
       opacity: 0;
     }
   }
-
   
   p {
     margin-top: 8px;
-    color: #fff;
+    color: #ffcb9a;
     font-size: 32px;
     font-family: 'source code pro', monospace;
     position: relative;
@@ -77,7 +76,36 @@
   }
   p::before {
     background: var(--background-color);
-    animation: typewriter 1s steps(20) 4s forwards;
+    animation: typewriter 1s steps(20) 2.5s forwards;
+  }
+  
+  @keyframes appear {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 100;
+    }
+  }
+
+  .pp {
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    width: 55%;
+    font-size: 20px;
+    margin-top: 50px;
+    opacity: 0;
+    animation: appear 2s 3.5s forwards;
+  }
+  .pp-points {
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    width: 55%;
+    margin-top: 10px;
+    font-size: 18px;
+
+    opacity: 0;
+    animation: appear 2s 3.5s forwards;
   }
 
 
