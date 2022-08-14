@@ -2,6 +2,7 @@ import React from 'react'
 import '../App.css';
 import { Button } from './Button';
 import './AboutMe.css';
+import lakeImage from '../images/near_lake.jpeg';
 
 function AboutMe() {
   return (
@@ -9,8 +10,11 @@ function AboutMe() {
         <div className='about-center-container'>
             <h1 className='aboutMe-h1'>About Me: </h1> 
             <div className='about-content'>
-                <img className="aboutMeImage" src={process.env.PUBLIC_URL + '/images/jared_formal.jpeg'} />
-                <p className='aboutMe-p'>
+                <div className="aboutMeImage-wrapper-container">
+                    <div className="aboutMeImage-wrapper" style={{ backgroundImage: "url(" + lakeImage + ")"}}>
+                    </div>
+                </div>
+                <div className='aboutMe-p'>
                     Hello! My name is Jared and I am a first-gen college student from Seattle, WA. 
                     I am a problem solver who loves designing and building software projects. My interest
                     in CS started in early high school after I flipped through the first three chapters of  
@@ -27,7 +31,7 @@ function AboutMe() {
                     <br /> &emsp; <i class="fa-solid fa-angle-right"></i> &nbsp; MySQL &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&thinsp;&nbsp;&thinsp;
                     &emsp; &emsp; <i class="fa-solid fa-angle-right"></i> &nbsp; Firebase
 
-                </p>
+                </div>
             </div>
             
         </div>

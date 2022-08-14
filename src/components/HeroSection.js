@@ -1,19 +1,19 @@
 import React from 'react'
 import '../App.css';
-import { Button } from './Button';
 import './HeroSection.css';
+import bridgeImage from '../images/bridge.jpeg';
 
 function HeroSection() {
   return (
     <div className='hero-container'>
         <div className='hero-center-container'>
-        <img className="heroImage" src={process.env.PUBLIC_URL + '/images/bridge.JPG'} />
+        <img className="heroImage" src={bridgeImage} />
 
         <h1>Hello World,</h1> 
         <p>My name is Jared Ni.</p>
         <div className="pp">I am a rising sophomore at Harvard studying computer science and economics.
-            My dream is to engineer software products that improve the way people live.
-            <br/> Here are some interesting facts about me: 
+            My goal is to engineer software products that improve the way people live.
+            Here are some interesting facts about me: 
         </div>
         <div className="pp-points">
             &emsp; <i class="fa-solid fa-quote-left quote"></i>        

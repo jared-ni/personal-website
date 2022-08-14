@@ -1,19 +1,21 @@
     .about-container {
-      height: 100vh;
+      height: fit-content;
+      min-height: 800px;
       width: 100vw;
       display: flex;
       flex-direction: column;
       align-items: center;
       background-color: #2c3531;
       object-fit: contain;
+      z-index: 1000;
+      border-bottom: 10px solid #ffcb9a;
     }
 
     .about-center-container {
-        height: 100vh;
-        width: 60%;
-        max-width: 1100px;
-        align-items: left;
+        height: inherit;
+        max-width: 900px;
         margin-top: 100px;
+        z-index: inherit;
     }
     
     .aboutMe-h1 {
@@ -46,61 +48,121 @@
         blink 1s step-start infinite;
     }
     
-  
-    .aboutMeImage {
-      width: 450px;
+    .aboutMeImage-wrapper-container {
+      position: relative;
+      z-index: inherit;
+      max-width: 350px;
+      width: 350px;
+      height: 90%;
+    }
+
+    .aboutMeImage-wrapper {
+      position: absolute;
+      max-width: inherit;
+      width: inherit;
+      height: inherit;
+      background-size: cover;
+      background-position: center;
       border-radius: 5%;
       animation: intro 0.8s ease-out;;
-      z-index: 50;
-      flex: 1;
-      
+      z-index: inherit;
+    }
+    .aboutMeImage-wrapper::after,
+    .aboutMeImage-wrapper::before {
+      content: "";
+      position: absolute;
+      border-radius: 5%;
+      max-width: 350px;
+      height: 100%;
+      width: 350px;
+    }
+    .aboutMeImage-wrapper::after {
+      top: 0;
+      left: 0;
+      background: #116466;
+      opacity: 0.4;
+      filter: brightness(150%) contrast(1000%) hue-rotate(15deg);
+      z-index: 1;
+    } 
+    .aboutMeImage-wrapper::before {
+      top: 20px;
+      left: -20px;
+      background: #ffcb9a;
+      z-index: -100;
+      transition: all 0.2s ease;
+    }
+    .aboutMeImage-wrapper:hover::before {
+      top: 10px;
+      left: -10px;
+      transition: all 0.2s ease;
+    }
+    .aboutMeImage-wrapper:hover::after {
+      opacity: 0;
     }
 
     .about-content {
-      display: flex;
+      display: grid;
+      grid-template-columns: 2fr 3fr;
+      gap: 50px;
       flex-direction: row;
       margin-top: 50px;
     }
     .aboutMe-p {
-      flex: 2;
-      margin-left: 50px;
       color: #fff;
       font-family: 'Open Sans', sans-serif;
-      width: 60%;
+      width: 100%;
       max-width: 850px;
       font-size: 20px;
-      margin-top: 50px;
-      opacity: 0;
-      animation: appear 2s 3.5s forwards;
     }
 
-
-
-    
     
     @media screen and (max-width: 950px) {
-      .heroImage {
-        margin-top: -200px;
+      .about-content {
+        display: block;
+        grid-template-columns: 1fr 2fr;
       }
-      h1 {
+      .aboutMeImage-wrapper-container {
+        display: block;
+        object-fit: cover;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 400px;
+        max-height: 50%;
+        width: 350px;
+        height: 350px;
+      }
+      .overlay {
+        display: block;
+        max-width: 100%;
+        max-height: 100%;
+      }
+
+      .aboutMe-h1 {
         font-size: 50px;
-        margin-top: 50px;
+        padding-left: 5vw;
       }
-      p {
-        font-size: 30px;
+      .aboutMe-p {
+        font-size: 20px;
+        padding: 5vw;
       }
     }
   
     @media screen and (max-width: 400px) {
-      .heroImage {
-        width: 30vw;
-        margin-top: -300px;
+      .aboutMeImage-wrapper-container {
+        width: 250px;
+        height: 250px;
+        margin-bottom: 15px;
       }
-      h1 {
+      .aboutMeImage-wrapper::after, 
+      .aboutMeImage-wrapper::before, 
+      .aboutMeImage-wrapper {
+        width: inherit;
+        height: inherit;
+      }
+      .aboutMe-h1 {
         font-size: 10vw;
-        margin-top: 50px;
       }
-      p {
+      .aboutMe-p {
         font-size: 5vw;
       }
     }

@@ -1,10 +1,11 @@
 :root {
   --background-color: #2c3531;
-  --typewriter-speed: 1s;
+  --typewriter-speed: 1.5s;
 }
 
   .hero-container {
-    height: 95vh;
+    min-height: 95vh;
+    height: fit-content;
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -16,7 +17,7 @@
   }
   .hero-center-container {
     max-width: 1000px;
-    width: 90%;
+    width: 60%;
     justify-content: center;
     display: flex;
     flex-direction: column;
@@ -84,7 +85,7 @@
   }
   p::before {
     background: var(--background-color);
-    animation: typewriter 1s steps(20) 2.5s forwards;
+    animation: typewriter 0.8s steps(20) 1.8s forwards;
   }
   
   @keyframes appear {
@@ -102,8 +103,8 @@
     font-size: 20px;
     margin-top: 50px;
     opacity: 0;
-    width:fit-content;
-    animation: appear 2s 3.5s forwards;
+    width: fit-content;
+    animation: appear 1.5s 2.5s forwards;
   }
   .pp-points {
     color: #fff;
@@ -113,7 +114,7 @@
     font-size: 18px;
 
     opacity: 0;
-    animation: appear 2s 3.5s forwards;
+    animation: appear 1.5s 3s forwards;
   }
   .quote {
     color: #ffcb9a;
@@ -142,7 +143,6 @@
   }
   .heroImage {
     width: 150px;
-    margin-top: -100px;
     clip-path: circle();
     vertical-align: bottom;
     animation: intro 0.8s ease-out;;
@@ -158,7 +158,7 @@
   
   @media screen and (max-width: 950px) {
     .heroImage {
-      margin-top: 0px;
+      margin-top: 100px;
     }
     h1 {
       font-size: 50px;
@@ -170,16 +170,20 @@
   }
 
   @media screen and (max-width: 400px) {
+    .hero-center-container {
+      padding: 20px;
+      max-width: 95%;
+      min-width: 95%;
+    }
     .heroImage {
       width: 30vw;
-      margin-top: -300px;
     }
     h1 {
       font-size: 10vw;
       margin-top: 50px;
     }
     p {
-      font-size: 5vw;
+      font-size: vw;
     }
   }
   

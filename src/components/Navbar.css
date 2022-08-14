@@ -7,8 +7,6 @@
     position: relative;
     top: 0;
     z-index: 100;
-    /* border-bottom: 0.5vh solid #D9B08C; */
-    /* animation: intro-nav 0.8s ease-out;; */
   }
 /*   
   @keyframes intro-nav {
