@@ -138,7 +138,7 @@
   .experience-content-description::before {
     content: "▹";
     position: absolute;
-    left: 20px;
+    left: 0px;
     color: #ffcb9a;
   }
   .content {
@@ -165,6 +165,7 @@
         overflow-x: auto;
         width: 100%;
         padding-bottom: 20px;
+        margin-bottom: 20px;
     }
     .tabs {
         display: flex;

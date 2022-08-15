@@ -1,6 +1,6 @@
 import React from 'react'
 import '../App.css';
-import './Experience.css';
+import './Project.css';
 import { useState } from 'react';
 
 
@@ -40,11 +40,6 @@ function Experience() {
                         className={toggleState === 4 ? "tabs active-tabs" : "tabs"}
                         onClick={() => toggleTab(4)}>
                         The Harvard Crimson
-                    </div>
-                    <div 
-                        className={toggleState === 4 ? "tabs active-tabs" : "tabs"}
-                        onClick={() => toggleTab(4)}>
-                        Lol
                     </div>
                 </div>
                 <div className="experience-content-container">

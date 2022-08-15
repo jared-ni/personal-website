@@ -2,6 +2,7 @@ import '../../App.css';
 import AboutMe from '../AboutMe';
 import Experience from '../Experience';
 import HeroSection from '../HeroSection';
+import Project from '../Project';
 
 function Home () {
     return (
@@ -10,6 +11,7 @@ function Home () {
                 <HeroSection /> 
                 <AboutMe />
                 <Experience />
+                <Project />
             </div>
         </>
     )
