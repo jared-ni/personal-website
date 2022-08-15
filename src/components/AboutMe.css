@@ -81,14 +81,14 @@
       left: 0;
       background: #116466;
       opacity: 0.4;
-      filter: brightness(150%) contrast(1000%) hue-rotate(15deg);
+      filter: brightness(150%) contrast(500%) hue-rotate(20deg);
       z-index: 1;
     } 
     .aboutMeImage-wrapper::before {
       top: 20px;
       left: -20px;
       background: #ffcb9a;
-      z-index: -100;
+      z-index: -1000;
       transition: all 0.2s ease;
     }
     .aboutMeImage-wrapper:hover::before {

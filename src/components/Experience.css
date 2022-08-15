@@ -14,20 +14,21 @@
   .experience-center-container {
       height: inherit;
       max-width: 900px;
-      width: 55%;
+      width: 700px;
       margin-top: 100px;
       z-index: inherit;
   }
   
   .experience-h1 {
     margin-top: 0px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     font-family: 'Source Code Pro', monospace;
     color: #ffcb9a;
-    font-size: 50px;
+    font-size: 40px;
     position: relative;
     width: max-content;
     z-index: 10;
+    /* border: 2px solid white; */
   }
   .experience-h1::before,
   .experience-h1::after {
@@ -69,15 +70,16 @@
   .experience-table {
     display: flex;
     flex-direction: row;
-    margin-top: 50px;
     font-family: "Open Sans", sans-serif;
+    /* border: 2px solid white; */
   }
   
   .experience-tabs-container {
-    font-size: 18px;
-    width: fit-content;
+    font-size: 15px;
+    width: 180px;
     flex-shrink: 0;
     position: relative;
+    margin-right: 20px;
   }
 
   .tabs {
@@ -91,36 +93,37 @@
     transition: transform 0.5s;
   }
   .active-tabs {
-    /* border-left:2px solid #ffcb9a; */
     color: #ffcb9a;
     background-color: #323d38;
   }
   .tabs:hover {
     background-color: #323d38;
-    border-left:2px solid #ffcb9a;
+    border-left: 2px solid #ffcb9a;
     transform: translate(-10%);
     transform: all 1s;
   }
 
-
-
-
-
   .experience-content-container {
     color: #fff;
     position: relative;
-    padding-left: 20px;
+    /* padding-left: 20px; */
   }
 
   .experience-content-title {
     font-size: 22px;
-    display: flex;
+    display: inline-block;
     flex-direction: row;
     font-weight: bold;
+    overflow-wrap: break-all;
   }
   .experience-content-company {
     color: #ffcb9a;
     text-decoration: none;
+  }
+  .experience-content-company-link {
+    color: inherit;
+    text-decoration: inherit;
+    display: inline-block;
   }
   .experience-content-date {
     font-size: 15px;
@@ -143,6 +146,53 @@
   }
   .active-content {
     display: block;
+  }
+
+  @media screen and (max-width: 750px) {
+    .experience-h1 {
+        margin-bottom: 10px;
+    }
+    .experience-center-container {
+        width: 90%;
+    }
+    .experience-table {
+        display: block;
+    }
+    .experience-tabs-container {
+        display: flex;
+        height: 100px;
+        padding-top: 20px;
+        overflow-x: auto;
+        width: 100%;
+        padding-bottom: 20px;
+    }
+    .tabs {
+        display: flex;
+        min-width: 120px;
+        max-width: 120px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 14px;
+    }
+    .tabs:hover {
+        transform: translate(0, -10%);
+        border-left: none;
+        border-top: 2px solid #ffcb9a;
+    }
+    .experience-content-container {
+        margin: auto;
+        width: 90%;
+    }
+    .experience-content-title {
+        font-size: 17px;
+    }
+    .experience-content-date {
+        font-size: 12px;
+    }
+    .experience-content-description {
+        font-size: 14px;
+    }
   }
 
   

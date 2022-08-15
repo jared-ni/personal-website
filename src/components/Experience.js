@@ -41,13 +41,24 @@ function Experience() {
                         onClick={() => toggleTab(4)}>
                         The Harvard Crimson
                     </div>
+                    <div 
+                        className={toggleState === 4 ? "tabs active-tabs" : "tabs"}
+                        onClick={() => toggleTab(4)}>
+                        Lol
+                    </div>
                 </div>
                 <div className="experience-content-container">
                     <div className={toggleState === 1 ? "content active-content" : "content"}>
                         <div className="experience-content-title">
                             Software Engineer Intern 
-                            <a href="https://www.fidelity.com/" target="_blank" className="experience-content-company">&nbsp;@ Fidelity Investments</a>
+                            <span class="experience-content-company">
+                                &nbsp;@&nbsp;
+                                <a href="https://www.fidelity.com/" target="_blank" className="experience-content-company-link">
+                                    Fidelity Investments
+                                </a>
+                            </span>
                         </div>
+
                         <div className="experience-content-date">
                             June 2022 — Aug. 2022 
                         </div>
@@ -64,7 +75,12 @@ function Experience() {
                     <div className={toggleState === 2 ? "content active-content" : "content"}>
                         <div className="experience-content-title">
                             Android Software Developer
-                            <a href="https://www.ardaimpact.com/" target="_blank" className="experience-content-company">&nbsp;@ Arda</a>
+                            <span class="experience-content-company">
+                                &nbsp;@&nbsp;
+                                <a href="https://www.ardaimpact.com/" target="_blank" className="experience-content-company-link">
+                                    Arda
+                                </a>
+                            </span>
                         </div>
                         <div className="experience-content-date">
                             Oct. 2021 — May 2022 
@@ -79,7 +95,12 @@ function Experience() {
                     <div className={toggleState === 3 ? "content active-content" : "content"}>
                         <div className="experience-content-title">
                             Software Developer
-                            <a href="https://datamatch.me/" target="_blank" className="experience-content-company">&nbsp;@ Datamatch</a>
+                            <span class="experience-content-company">
+                                &nbsp;@&nbsp;
+                                <a href="https://datamatch.me/" target="_blank" className="experience-content-company-link">
+                                    Datamatch
+                                </a>
+                            </span>
                         </div>
                         <div className="experience-content-date">
                             Oct. 2021 — April 2022 
@@ -97,7 +118,12 @@ function Experience() {
                     <div className={toggleState === 4 ? "content active-content" : "content"}>
                         <div className="experience-content-title">
                             Technology Associate
-                            <a href="https://datamatch.me/" target="_blank" className="experience-content-company">&nbsp;@ The Harvard Crimson</a>
+                            <span class="experience-content-company">
+                                &nbsp;@&nbsp;
+                                <a href="https://www.thecrimson.com/" target="_blank" className="experience-content-company-link">
+                                    The Harvard Crimson
+                                </a>
+                            </span>
                         </div>
                         <div className="experience-content-date">
                             Oct. 2021 — Present
