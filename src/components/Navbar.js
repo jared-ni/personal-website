@@ -8,7 +8,7 @@ function Navbar() {
     const [click, setClick] = useState(false);
     const [lastScrollPos, setLastScrollPos] = useState(100);
     const [bodyOffset, setBodyOffset] = useState(document.body.getBoundingClientRect());
-    const [scrollDirection, setScrollDirection] = useState("up");
+    const [scrollDirection, setScrollDirection] = useState("down");
 
     const handleClick = () => setClick(!click);
 
