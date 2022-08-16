@@ -18,10 +18,10 @@ function Project() {
 
             <div className="project-table">
                 <li>
-                    <a href="https://github.com/milkteadj/OCaml-interpreter" target="_blank" rel="nonreferrer"
+                    <a href="http://localhost:3000/" target="_blank" rel="noreferrer"
                         className="project-card">
                         <div className="project-card-logo-wrapper">
-                            <img className="project-card-logo" src={MyWebsite}/>
+                            <img className="project-card-logo" src={MyWebsite} alt="project preview"/>
                         </div>
                         
                         <div className="project-card-overlay">
@@ -30,7 +30,9 @@ function Project() {
                                     Personal Website
                                 </div>
                                 <div className="project-card-buttons">
-                                    <a href="https://github.com/milkteadj/OCaml-interpreter" target="_blank" rel="nonreferrer" class="fa-brands fa-github project-card-button-github"></a>
+                                    <a href="https://github.com/milkteadj/personal-website" target="_blank" rel="noreferrer">
+                                        <i class="fa-brands fa-github project-card-button-github"></i>
+                                    </a>
                                 </div>
                             </div>
                             <div className="project-card-tech">
@@ -47,7 +49,7 @@ function Project() {
                     <a href="https://datamatch.me/" target="_blank" rel="noreferrer"
                         className="project-card">
                         <div className="project-card-logo-wrapper">
-                            <img className="project-card-logo" src={Datamatch}/>
+                            <img className="project-card-logo" src={Datamatch} alt="project preview"/>
                         </div>
                         
                         <div className="project-card-overlay">
@@ -72,7 +74,7 @@ function Project() {
                     <a href="https://thenapchat.herokuapp.com/" target="_blank" rel="noreferrer"
                         className="project-card">
                         <div className="project-card-logo-wrapper">
-                            <img className="project-card-logo" src={Napchat}/>
+                            <img className="project-card-logo" src={Napchat} alt="project preview"/>
                         </div>
                         
                         <div className="project-card-overlay">
@@ -81,7 +83,9 @@ function Project() {
                                     Napchat
                                 </div>
                                 <div className="project-card-buttons">
-                                    <a href="https://github.com/milkteadj/napchat" target="_blank" rel="noreferrer" class="fa-brands fa-github project-card-button-github"></a>
+                                    <a href="https://github.com/milkteadj/napchat" target="_blank" rel="noreferrer">
+                                        <i class="fa-brands fa-github project-card-button-github"></i>
+                                    </a>
                                 </div>
                             </div>
                             <div className="project-card-tech">
@@ -96,7 +100,7 @@ function Project() {
                 <li>
                     <a href="https://github.com/milkteadj/OCaml-interpreter" target="_blank" rel="noreferrer" className="project-card">
                         <div className="project-card-logo-wrapper">
-                            <img className="project-card-logo" src={MiniML}/>
+                            <img className="project-card-logo" src={MiniML} alt="project preview"/>
                         </div>
                         
                         <div className="project-card-overlay">
@@ -105,7 +109,9 @@ function Project() {
                                     OCaml Interpreter
                                 </div>
                                 <div className="project-card-buttons">
-                                    <a href="https://github.com/milkteadj/OCaml-interpreter" target="_blank" rel="noreferrer" class="fa-brands fa-github project-card-button-github"></a>
+                                    <a href="https://github.com/milkteadj/OCaml-interpreter" target="_blank" rel="noreferrer">
+                                        <i class="fa-brands fa-github project-card-button-github"></i>
+                                    </a>
                                 </div>
                             </div>
                             <div className="project-card-tech">

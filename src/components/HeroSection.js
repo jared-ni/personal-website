@@ -7,7 +7,7 @@ function HeroSection() {
   return (
     <div className='hero-container'>
         <div className='hero-center-container'>
-        <img className="heroImage" src={bridgeImage} alt="Jared Ni's image"/>
+        <img className="heroImage" src={bridgeImage} alt="Jared Ni"/>
 
         <h1>Hello World,</h1> 
         <p>My name is Jared Ni.</p>
