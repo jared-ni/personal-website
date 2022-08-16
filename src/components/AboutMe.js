@@ -1,6 +1,5 @@
 import React from 'react'
 import '../App.css';
-import { Button } from './Button';
 import './AboutMe.css';
 import lakeImage from '../images/near_lake.jpeg';
 

@@ -1,7 +1,10 @@
 import React from 'react'
 import '../App.css';
 import './Experience.css';
+import MyWebsite from '../images/my-website.png';
 import Napchat from '../images/napchat.png';
+import Datamatch from '../images/datamatch.png';
+import MiniML from '../images/miniML.png';
 
 function Project() {
 
@@ -14,9 +17,59 @@ function Project() {
             </h1>
 
             <div className="project-table">
+                <li>
+                    <a href="https://github.com/milkteadj/OCaml-interpreter" target="_blank" rel="nonreferrer"
+                        className="project-card">
+                        <div className="project-card-logo-wrapper">
+                            <img className="project-card-logo" src={MyWebsite}/>
+                        </div>
+                        
+                        <div className="project-card-overlay">
+                            <div className="project-card-header">
+                                <div className="project-card-name">
+                                    Personal Website
+                                </div>
+                                <div className="project-card-buttons">
+                                    <a href="https://github.com/milkteadj/OCaml-interpreter" target="_blank" rel="nonreferrer" class="fa-brands fa-github project-card-button-github"></a>
+                                </div>
+                            </div>
+                            <div className="project-card-tech">
+                                React.js&emsp;CSS&emsp;MongoDB&emsp;Netlify
+                            </div>
+                            <div className="project-card-description">
+                                An interpreter for MiniML, a functional, Turing-complete subset of the OCaml language that has both concrete and abstract syntax and is capable of evaluating basic functional operations. The project includes a lexical analyzer, a parser, and an interpreter.
+                            </div>
+                        </div>
+                    </a>
+                </li>
 
                 <li>
-                    <a href="https://thenapchat.herokuapp.com/" target="_blank"
+                    <a href="https://datamatch.me/" target="_blank" rel="noreferrer"
+                        className="project-card">
+                        <div className="project-card-logo-wrapper">
+                            <img className="project-card-logo" src={Datamatch}/>
+                        </div>
+                        
+                        <div className="project-card-overlay">
+                            <div className="project-card-header">
+                                <div className="project-card-name">
+                                    Datamatch 2022
+                                </div>
+                                <div className="project-card-buttons">
+                                    <i class="fa-solid fa-lock"></i>
+                                </div>
+                            </div>
+                            <div className="project-card-tech">
+                                React.js&emsp;CSS&emsp;Firebase&emsp;Heroku
+                            </div>
+                            <div className="project-card-description">
+                                A survey-based matchmaking service for students at Harvard and 42 other colleges. Generated 235k matches and had 52k active users in 2022.                            
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://thenapchat.herokuapp.com/" target="_blank" rel="noreferrer"
                         className="project-card">
                         <div className="project-card-logo-wrapper">
                             <img className="project-card-logo" src={Napchat}/>
@@ -24,11 +77,11 @@ function Project() {
                         
                         <div className="project-card-overlay">
                             <div className="project-card-header">
-                                <a className="project-card-name">
+                                <div className="project-card-name">
                                     Napchat
-                                </a>
+                                </div>
                                 <div className="project-card-buttons">
-                                    <i class="fa-brands fa-github"></i>
+                                    <a href="https://github.com/milkteadj/napchat" target="_blank" rel="noreferrer" class="fa-brands fa-github project-card-button-github"></a>
                                 </div>
                             </div>
                             <div className="project-card-tech">
@@ -40,13 +93,31 @@ function Project() {
                         </div>
                     </a>
                 </li>
+                <li>
+                    <a href="https://github.com/milkteadj/OCaml-interpreter" target="_blank" rel="noreferrer" className="project-card">
+                        <div className="project-card-logo-wrapper">
+                            <img className="project-card-logo" src={MiniML}/>
+                        </div>
+                        
+                        <div className="project-card-overlay">
+                            <div className="project-card-header">
+                                <div className="project-card-name">
+                                    OCaml Interpreter
+                                </div>
+                                <div className="project-card-buttons">
+                                    <a href="https://github.com/milkteadj/OCaml-interpreter" target="_blank" rel="noreferrer" class="fa-brands fa-github project-card-button-github"></a>
+                                </div>
+                            </div>
+                            <div className="project-card-tech">
+                                OCaml&emsp;Makefile&emsp;LaTex
+                            </div>
+                            <div className="project-card-description">
+                                An interpreter for MiniML, a functional, Turing-complete subset of the OCaml language that has both concrete and abstract syntax and is capable of evaluating basic functional operations. The project includes a lexical analyzer, a parser, and an interpreter.
+                            </div>
+                        </div>
+                    </a>
+                </li>
 
-
-                <div className="project-card">project2</div>
-                <div className="project-card">project3</div>
-
-
-                
             </div>
         </div>
     </div>

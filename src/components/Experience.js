@@ -48,7 +48,7 @@ function Experience() {
                             Software Engineer Intern 
                             <span class="experience-content-company">
                                 &nbsp;@&nbsp;
-                                <a href="https://www.fidelity.com/" target="_blank" className="experience-content-company-link">
+                                <a href="https://www.fidelity.com/" target="_blank" rel="noreferrer" className="experience-content-company-link">
                                     Fidelity Investments
                                 </a>
                             </span>
@@ -72,7 +72,7 @@ function Experience() {
                             Android Software Developer
                             <span class="experience-content-company">
                                 &nbsp;@&nbsp;
-                                <a href="https://www.ardaimpact.com/" target="_blank" className="experience-content-company-link">
+                                <a href="https://www.ardaimpact.com/" target="_blank" rel="noreferrer" className="experience-content-company-link">
                                     Arda
                                 </a>
                             </span>
@@ -92,7 +92,7 @@ function Experience() {
                             Software Developer
                             <span class="experience-content-company">
                                 &nbsp;@&nbsp;
-                                <a href="https://datamatch.me/" target="_blank" className="experience-content-company-link">
+                                <a href="https://datamatch.me/" target="_blank" rel="noreferrer" className="experience-content-company-link">
                                     Datamatch
                                 </a>
                             </span>
@@ -115,7 +115,7 @@ function Experience() {
                             Technology Associate
                             <span class="experience-content-company">
                                 &nbsp;@&nbsp;
-                                <a href="https://www.thecrimson.com/" target="_blank" className="experience-content-company-link">
+                                <a href="https://www.thecrimson.com/" target="_blank" rel="noreferrer" className="experience-content-company-link">
                                     The Harvard Crimson
                                 </a>
                             </span>

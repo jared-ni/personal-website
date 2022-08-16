@@ -3,9 +3,6 @@ import { Link } from 'react-router-dom';
 import './Navbar.css';
 
 
-import { Button } from './Button';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
 function Navbar() {
 
     const [click, setClick] = useState(false);
