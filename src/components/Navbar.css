@@ -1,12 +1,25 @@
+:root {
+  --navbar-height: 100px;
+}
+
 .navbar {
     background: #2c3531;
-    height: 100px;
+    height: var(--navbar-height);
     display: flex;
     align-items: center;
     font-size: 1.4rem;
     position: relative;
     top: 0;
-    z-index: 100;
+    z-index: 10000;
+    position: sticky;
+    visibility: visible;
+    transition: all 0.2s;
+  }
+
+  .hide {
+    visibility: hidden;
+    transition: all 0.2s;
+    transform: translateY(-100%);
   }
 /*   
   @keyframes intro-nav {

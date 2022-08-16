@@ -18,7 +18,7 @@ function Project() {
 
             <div className="project-table">
                 <li>
-                    <a href="http://localhost:3000/" target="_blank" rel="noreferrer"
+                    <a href="https://jaredni.com" target="_blank" rel="noreferrer"
                         className="project-card">
                         <div className="project-card-logo-wrapper">
                             <img className="project-card-logo" src={MyWebsite} alt="project preview"/>
@@ -39,7 +39,7 @@ function Project() {
                                 React.js&emsp;CSS&emsp;MongoDB&emsp;Netlify
                             </div>
                             <div className="project-card-description">
-                                An interpreter for MiniML, a functional, Turing-complete subset of the OCaml language that has both concrete and abstract syntax and is capable of evaluating basic functional operations. The project includes a lexical analyzer, a parser, and an interpreter.
+                                Designed and Built by Jared Ni — Welcome to my personal website!
                             </div>
                         </div>
                     </a>

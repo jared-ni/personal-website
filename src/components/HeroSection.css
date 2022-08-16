@@ -13,7 +13,7 @@
     align-items: center;
     background-color: #2c3531;
     object-fit: contain;
-    border-bottom: 10px solid #ffcb9a;
+
   }
   .hero-center-container {
     max-width: 1000px;
@@ -172,8 +172,8 @@
   @media screen and (max-width: 400px) {
     .hero-center-container {
       padding: 20px;
-      max-width: 95%;
-      min-width: 95%;
+      max-width: 100%;
+      min-width: 100%;
     }
     .heroImage {
       width: 30vw;
@@ -183,7 +183,13 @@
       margin-top: 50px;
     }
     p {
-      font-size: vw;
+      font-size: 23px;
+    }
+    .pp {
+      font-size: 15px;
+    }
+    .pp-points {
+      font-size: 15px;
     }
   }
   

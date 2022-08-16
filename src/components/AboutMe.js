@@ -7,7 +7,7 @@ function AboutMe() {
   return (
     <div className='about-container'>
         <div className='about-center-container'>
-            <h1 className='aboutMe-h1'>About Me: </h1> 
+            <h1 className='aboutMe-h1'>About Me: </h1>
             <div className='about-content'>
                 <div className="aboutMeImage-wrapper-container">
                     <div className="aboutMeImage-wrapper" style={{ backgroundImage: "url(" + lakeImage + ")"}}>

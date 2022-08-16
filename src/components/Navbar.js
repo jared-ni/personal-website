@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useEffect, useState} from 'react'
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 
@@ -6,21 +6,38 @@ import './Navbar.css';
 function Navbar() {
 
     const [click, setClick] = useState(false);
+    const [lastScrollPos, setLastScrollPos] = useState(0);
+    const [bodyOffset, setBodyOffset] = useState(document.body.getBoundingClientRect());
+    const [scrollDirection, setScrollDirection] = useState();
 
     const handleClick = () => setClick(!click);
 
     const closeMobileMenu = () => setClick(false);
 
+    const scrollListner = e => {
+        // get size of the screen
+        setBodyOffset(document.body.getBoundingClientRect());
+        // if last scrolled position is higher, then it's scroll up, else it's scroll down
+        setScrollDirection(lastScrollPos > bodyOffset.top ? "up" : "down");
+        // continue setting the top screen position
+        setLastScrollPos(bodyOffset.top);
+    }
+
+    useEffect(() => {
+        window.addEventListener('scroll', 
+        scrollListner);
+        return (() => {
+            window.removeEventListener('scroll', scrollListner);
+        })
+    });
+
     return(
         <>
-            <nav className='navbar'>
+            <nav className={scrollDirection === "down" ? 'navbar' : 'navbar hide'}>
                 
                 <Link to='/' className='navbar-logo'>
                     <div>Jared Ni<div className="hidden-arrow">&nbsp; <i class="fa-solid fa-arrow-right-long"></i></div></div>
                 </Link>
-                {/* <div class="showhim">HOVER ME
-                    <div class="showme">hai</div>
-                </div> */}
                 
                 <div className="menu-icon" onClick={handleClick}>
                     <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
