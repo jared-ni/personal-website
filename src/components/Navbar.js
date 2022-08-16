@@ -6,7 +6,7 @@ import './Navbar.css';
 function Navbar() {
 
     const [click, setClick] = useState(false);
-    const [lastScrollPos, setLastScrollPos] = useState(0);
+    const [lastScrollPos, setLastScrollPos] = useState(100);
     const [bodyOffset, setBodyOffset] = useState(document.body.getBoundingClientRect());
     const [scrollDirection, setScrollDirection] = useState("up");
 
@@ -14,13 +14,17 @@ function Navbar() {
 
     const closeMobileMenu = () => setClick(false);
 
-    const scrollListner = e => {
-        // get size of the screen
-        setBodyOffset(document.body.getBoundingClientRect());
+    const scrollListner = () => {
+        // make navbar not move for the first 100px
+        if (document.body.getBoundingClientRect().top < -100) {
+            setBodyOffset(document.body.getBoundingClientRect());
+        }
+        console.log(document.body.getBoundingClientRect());
+        
         // if last scrolled position is higher, then it's scroll up, else it's scroll down
-        setScrollDirection(lastScrollPos < bodyOffset.top ? "down" : "up");
+        setScrollDirection(lastScrollPos >= -bodyOffset.top ? "down" : "up");
         // continue setting the top screen position
-        setLastScrollPos(bodyOffset.top);
+        setLastScrollPos(-bodyOffset.top);
     }
 
     useEffect(() => {
@@ -33,7 +37,7 @@ function Navbar() {
 
     return(
         <>
-            <nav className={scrollDirection === "down" ? 'navbar bar' : 'navbar'}>
+            <nav className={scrollDirection === "down" ? 'navbar' : 'navbar hide'}>
                 
                 <Link to='/' className='navbar-logo'>
                     <div>Jared Ni<div className="hidden-arrow">&nbsp; <i class="fa-solid fa-arrow-right-long"></i></div></div>
