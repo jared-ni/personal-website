@@ -59,7 +59,7 @@ function Experience() {
                             June 2022 — Aug. 2022 
                         </div>
                         <div className="experience-content-description">
-                            Created Java Spring backend service that fetches and processes channels, members, and conversations data from Microsoft Teams to store into the database and display on the company UI to wider groups of users in real time
+                            Created Java Spring backend service that fetches and processes channels, members, and conversations data from Microsoft Teams to store into the database and display on the company UI to wider groups of users in real time.
                         </div>
                         <div className="experience-content-description"> 
                             Designed and implemented multi-threaded scheduler bash processes that exponentially increased the time efficiency of data delivery.
