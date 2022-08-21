@@ -39,8 +39,8 @@
     font-size: 2rem;
     position: absolute;
     padding: 15px;
-    display: flex;
-    flex-direction: row;
+    display: relative;
+    /* flex-direction: row; */
   }
 
   .hidden-arrow {
@@ -49,8 +49,21 @@
     color: #D9B08C;
     opacity: 0;
     transition: all 0.3s;
-    position: relative;
+    position: absolute;
+    top: 15px;
+    right: -25px;
+    transform: translateX(-50px);
+    transition: all 0.5s;
   }
+
+  button:after {
+    position: absolute;
+    opacity: 0;  
+    top: 14px;
+    right: -20px;
+    transition: 0.5s;
+  }
+
   .navbar-logo::before {
     content: '';
     position: absolute;
@@ -77,9 +90,11 @@
 
   .navbar-logo:hover .hidden-arrow {
     opacity: 1;
+    transform: translateX(5px);
+    transition: all 0.3s;
   }
   .navbar-logo:active .hidden-arrow {
-    padding-left: 15px;
+    transform: translateX(15px);
     transition: all 0.2s;
   }
 

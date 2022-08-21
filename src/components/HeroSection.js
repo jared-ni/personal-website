@@ -12,19 +12,22 @@ function HeroSection() {
         </div>
         <h1 className="hero-h1">Hello World,</h1> 
         <p>My name is Jared Ni.</p>
-        <div className="pp">I am a rising sophomore at Harvard studying computer science and economics.
-            My goal is to engineer software products that improve the way people live.
+        <div className="pp">I am a rising sophomore at Harvard studying computer science and economics, 
+            and my passion is building accessible and transformative software products. 
             Here are some interesting facts about me: 
         </div>
-        <div className="pp-points">
-            &emsp; <i class="fa-solid fa-quote-left quote"></i>        
-                &nbsp; I helped build a college matchmaking app used by 50k students 
-                &nbsp; <i class="fa-solid fa-heart"></i> 
-            <br /> &emsp; <i class="fa-solid fa-quote-left quote"></i> 
-                &nbsp; I designed and programmed the frontend of a mobile drone-delivery app at a start-up 
-                &nbsp; <i class="fa-solid fa-helicopter"></i>
-            <br /> &emsp; <i class="fa-solid fa-quote-left quote"></i> 
-                &nbsp; Favorite Harvard course so far: CS20 Discrete Mathematics for Computer Science &nbsp; <i class="fa-solid fa-share-nodes"></i>
+        <div className="pp-points-container">
+            <div className="pp-points"> 
+                I helped build a college matchmaking app used by 50k students 
+                    &nbsp; <i class="fa-solid fa-heart"></i> 
+            </div>
+            <div className="pp-points"> 
+                I designed and programmed the frontend of a mobile drone-delivery app at a start-up 
+                    &nbsp; <i class="fa-solid fa-helicopter"></i>
+            </div>
+            <div className="pp-points">
+                Favorite Harvard course so far: CS20 Discrete Mathematics for Computer Science &nbsp; <i class="fa-solid fa-share-nodes"></i>
+            </div>
         </div>
         </div>
     </div>

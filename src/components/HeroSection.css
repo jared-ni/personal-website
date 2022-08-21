@@ -24,6 +24,7 @@
     flex-direction: column;
     align-items: center;
     z-index: inherit;
+    position: relative;
   }
 
   .heroImage-wrapper {
@@ -123,17 +124,29 @@
     font-size: 20px;
     margin-top: 50px;
     opacity: 0;
-    width: fit-content;
     animation: appear 1.5s 2.5s forwards;
+    position: relative;
+  }
+  .pp-points-container {
+    display: relative;
+    width: 100%;
   }
   .pp-points {
+    align-items: left;
     color: #fff;
     width: fit-content;
     font-family: 'Open Sans', sans-serif;
     margin-top: 10px;
+    margin-left: 30px;
     font-size: 18px;
     opacity: 0;
     animation: appear 1.5s 3s forwards;
+  }
+  .pp-points::before {
+    content: "▹";
+    position: absolute;
+    left: 0px;
+    color: #ffcb9a;
   }
   .quote {
     color: #ffcb9a;
@@ -162,9 +175,7 @@
   
   @media screen and (max-width: 950px) {
     .hero-center-container {
-      padding: 20px;
-      max-width: 100%;
-      min-width: 100%;
+      width: 90%;
     }
     .heroImage {
       margin-top: 100px;
@@ -178,6 +189,7 @@
     }
     .pp {
       font-size: 17px;
+      width: 100%;
     }
     .pp-points {
       font-size: 17px;
