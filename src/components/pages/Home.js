@@ -4,24 +4,28 @@ import Experience from '../Experience';
 import HeroSection from '../HeroSection';
 import Project from '../Project';
 import Contact from '../Contact';
+import Credit from '../Credit';
 
 function Home () {
     return (
         <>
-            <section className="hero" id="#">
-            <HeroSection/>
+            <section id="#">
+                <HeroSection/>
             </section>
-            <section className="about" id="about">
-            <AboutMe/>
+            <section id="about">
+                <AboutMe/>
             </section>
-            <section className="experience" id="experience">
-            <Experience/>
+            <section id="experience">
+                <Experience/>
             </section>
-            <section className="work" id="work">
-            <Project/>
+            <section id="work">
+                <Project/>
             </section>
-            <section className="contact" id="contact">
-            <Contact/>
+            <section id="contact">
+                <Contact/>
+            </section>
+            <section id="credit">
+                <Credit />
             </section>
         </>
     )

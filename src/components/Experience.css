@@ -1,6 +1,6 @@
 .experience-container {
     height: fit-content;
-    min-height: 800px;
+    min-height: 700px;
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -49,6 +49,7 @@
       typewriter var(--typewriter-speed) steps(11) forwards,
       blink 1s step-start infinite;
   }
+
   .experience-p {
     color: #fff;
     font-family: 'Open Sans', sans-serif;

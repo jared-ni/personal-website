@@ -12,11 +12,11 @@ function Project() {
   return (
     <div className="project-container">
         <div className="project-center-container">
-            <h1 className='project-h1'>
+            <h1 className='project-h1' data-aos="fade-up">
                 Noteworthy Projects:  
             </h1>
 
-            <div className="project-table">
+            <div className="project-table" data-aos="fade-up">
                 <li>
                     <a href="https://jaredni.com" target="_blank" rel="noreferrer"
                         className="project-card">

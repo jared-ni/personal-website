@@ -9,13 +9,13 @@ function AboutMe() {
   return (
     <div className='about-container'>
         <div className='about-center-container'>
-            <h1 className='aboutMe-h1' data-aos="zoom-in-up">About Me: </h1>
-            <div className='about-content' data-aos="zoom-in-up">
-                <div className="aboutMeImage-wrapper-container">
-                    <div className="aboutMeImage-wrapper" style={{ backgroundImage: "url(" + lakeImage + ")"}}>
+            <h1 className='aboutMe-h1' data-aos="fade-up">About Me: </h1>
+            <div className='about-content'>
+                    <div className="aboutMeImage-wrapper-container" data-aos="fade-up">
+                        <div className="aboutMeImage-wrapper" style={{ backgroundImage: "url(" + lakeImage + ")"}}>
                     </div>
                 </div>
-                <div className='aboutMe-p'>
+                <div className='aboutMe-p' data-aos="fade-up">
                     Hello! My name is Jared and I am a first-gen college student from Seattle, WA. 
                     I am a problem solver who loves designing and building software projects. My interest
                     in CS started in early high school after I flipped through the first three chapters of  

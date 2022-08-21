@@ -7,9 +7,10 @@ function HeroSection() {
   return (
     <div className='hero-container' id="/">
         <div className='hero-center-container'>
-        <img className="heroImage" src={bridgeImage} alt="Jared Ni"/>
-
-        <h1>Hello World,</h1> 
+        <div className="heroImage-wrapper" data-aos="fade-up">
+            <img className="heroImage" src={bridgeImage} alt="Jared Ni"  />
+        </div>
+        <h1 className="hero-h1">Hello World,</h1> 
         <p>My name is Jared Ni.</p>
         <div className="pp">I am a rising sophomore at Harvard studying computer science and economics.
             My goal is to engineer software products that improve the way people live.

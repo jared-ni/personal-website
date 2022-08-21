@@ -6,7 +6,7 @@ import './Contact.css';
 function Contact() {
     return (
         <div className='contact-container'>
-            <div className="contact-center-container">
+            <div className="contact-center-container" data-aos="fade-up">
                 <div className="contact-h1">
                     What's next?
                 </div>
