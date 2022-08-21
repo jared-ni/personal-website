@@ -5,7 +5,7 @@ import bridgeImage from '../images/bridge.jpeg';
 
 function HeroSection() {
   return (
-    <div className='hero-container'>
+    <div className='hero-container' id="/">
         <div className='hero-center-container'>
         <img className="heroImage" src={bridgeImage} alt="Jared Ni"/>
 

@@ -6,6 +6,7 @@
     font-family: 'Source Code Pro', monospace;
     font-family: 'DM Sans', sans-serif;
     font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth;
   }
 
   
@@ -21,3 +22,7 @@
     font-size: 3rem;
   }
   
+  .home-container {
+    position: relative;
+    flex-direction: column;
+  }
