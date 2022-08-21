@@ -2,13 +2,15 @@ import React from 'react'
 import '../App.css';
 import './AboutMe.css';
 import lakeImage from '../images/near_lake.jpeg';
+import "aos/dist/aos.css";
 
 function AboutMe() {
+
   return (
     <div className='about-container'>
         <div className='about-center-container'>
-            <h1 className='aboutMe-h1'>About Me: </h1>
-            <div className='about-content'>
+            <h1 className='aboutMe-h1' data-aos="zoom-in-up">About Me: </h1>
+            <div className='about-content' data-aos="zoom-in-up">
                 <div className="aboutMeImage-wrapper-container">
                     <div className="aboutMeImage-wrapper" style={{ backgroundImage: "url(" + lakeImage + ")"}}>
                     </div>

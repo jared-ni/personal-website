@@ -8,11 +8,3 @@
     font-family: 'Open Sans', sans-serif;
     scroll-behavior: smooth;
   }
-
-  
-  
-
-  .home-container {
-    position: relative;
-    flex-direction: column;
-  }

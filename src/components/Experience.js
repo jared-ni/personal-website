@@ -16,11 +16,11 @@ function Experience() {
     <div className='experience-container'>
         <div className='experience-center-container'>
             
-            <h1 className='experience-h1'>
+            <h1 className='experience-h1' data-aos="fade-up">
                 Experience: 
             </h1>
 
-            <div className="experience-table">
+            <div className="experience-table" data-aos="fade-up">
                 <div className="experience-tabs-container">
                     <div 
                         className={toggleState === 1 ? "tabs active-tabs" : "tabs"}
