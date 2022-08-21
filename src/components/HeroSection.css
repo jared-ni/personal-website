@@ -103,17 +103,17 @@
     right: 0;
     bottom: 0;
     left: 0;
-    /* opacity: 0; */
   }
   p::before {
     background: var(--background-color);
     animation: typewriter var(--typewriter-speed) steps(9) var(--typewriter-speed) forwards;
   }
   p::after {
+    opacity: 0;
     width: 0.05em;
     background: #ffcb9a;
     animation: 
-      /* appear 0.2s steps(1) var(--typewriter-speed) forwards, */
+      appear 0.2s steps(1) var(--typewriter-speed) forwards,
       typewriter var(--typewriter-speed) steps(9) var(--typewriter-speed) forwards,
       blink 1s step-start var(--typewriter-speed) infinite;
     
@@ -199,11 +199,11 @@
       margin-top: 100px;
     }
     .hero-h1 {
-      font-size: 50px;
+      font-size: 20px;
       margin-top: 50px;
     }
     .p {
-      font-size: 28px;
+      font-size: 12px;
     }
     .pp {
       font-size: 17px;
@@ -219,11 +219,11 @@
       width: 30vw;
     }
     .hero-h1 {
-      font-size: 10vw;
+      font-size: 5vw;
       margin-top: 50px;
     }
     p {
-      font-size: 23px;
+      font-size: 40px;
     }
     .pp {
       font-size: 15px;
