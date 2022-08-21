@@ -2,6 +2,17 @@
   --background-color: #2c3531;
   --typewriter-speed: 1.5s;
 }
+@keyframes typewriter {
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
 
   .hero-container {
     min-height: 95vh;
@@ -45,10 +56,10 @@
   
   
   .hero-h1 {
-    margin-top: 0px;
+    margin-top: 20px;
     font-family: 'Source Code Pro', monospace;
     color: #fff;
-    font-size: 100px;
+    font-size: 30px;
     position: relative;
     width: max-content;
     z-index: 10;
@@ -65,32 +76,21 @@
   }
   .hero-h1::before {
     background: var(--background-color);
-    animation: typewriter var(--typewriter-speed) steps(12) forwards;
+    animation: typewriter var(--typewriter-speed) steps(23) forwards;
   }
   .hero-h1::after {
     width: 0.05em;
     background: #fff;
     animation: 
-      typewriter var(--typewriter-speed) steps(12) forwards,
-      blink 1s step-start infinite;
-  }
-
-  @keyframes typewriter {
-    to {
-      left: 100%;
-    }
-  }
-
-  @keyframes blink {
-    50% {
-      opacity: 0;
-    }
+      typewriter var(--typewriter-speed) steps(23) forwards,
+      blink 1s step-start infinite, 
+      disappear 0.1s 1 var(--typewriter-speed) forwards;
   }
   
   p {
     margin-top: 8px;
     color: #ffcb9a;
-    font-size: 32px;
+    font-size: 80px;
     font-family: 'source code pro', monospace;
     position: relative;
     z-index: 10;
@@ -103,10 +103,20 @@
     right: 0;
     bottom: 0;
     left: 0;
+    /* opacity: 0; */
   }
   p::before {
     background: var(--background-color);
-    animation: typewriter 0.8s steps(20) 1.8s forwards;
+    animation: typewriter var(--typewriter-speed) steps(9) var(--typewriter-speed) forwards;
+  }
+  p::after {
+    width: 0.05em;
+    background: #ffcb9a;
+    animation: 
+      /* appear 0.2s steps(1) var(--typewriter-speed) forwards, */
+      typewriter var(--typewriter-speed) steps(9) var(--typewriter-speed) forwards,
+      blink 1s step-start var(--typewriter-speed) infinite;
+    
   }
   
   @keyframes appear {
@@ -114,7 +124,15 @@
       opacity: 0;
     }
     100% {
-      opacity: 100;
+      opacity: 1;
+    }
+  }
+  @keyframes disappear {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
     }
   }
 

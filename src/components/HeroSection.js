@@ -10,8 +10,8 @@ function HeroSection() {
         <div className="heroImage-wrapper" data-aos="fade-up">
             <img className="heroImage" src={bridgeImage} alt="Jared Ni"  />
         </div>
-        <h1 className="hero-h1">Hello World,</h1> 
-        <p>My name is Jared Ni.</p>
+        <h1 className="hero-h1">Hello World, my name is</h1> 
+        <p>Jared Ni.</p>
         <div className="pp">I am a rising sophomore at Harvard studying computer science and economics, 
             and my passion is building accessible and transformative software products. 
             Here are some interesting facts about me: 
