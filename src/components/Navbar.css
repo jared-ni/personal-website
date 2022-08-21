@@ -201,10 +201,10 @@
     .nav-links:hover {
       color: #fff;
       font-size: 1.7rem;
-      border-radius: 0.1vw;
-      border-top: 0px;
-      border-right: 2px solid #fff;
-      border-left: 2px solid #fff;
+    }
+    .nav-links::before {
+      border-top: 1px solid #fff;
+      border-bottom: 1px solid #fff;
     }
   
     /* Hamburger button */
@@ -221,29 +221,5 @@
     .fa-times {
       color: #fff;
       font-size: 2rem;
-    }
-  }
-
-  @media screen and (max-width: 400px) {
-    /* @keyframes word-hover-mobile {
-      0% {}
-      100% {padding: 5px; 
-        border-width: thick;
-        font-size: 1rem;}
-    } */
-    .navbar-logo {
-      font-size: 1.5rem;
-      padding: 0;
-    }
-    .navbar-logo:hover {
-      /* animation-name: word-hover-mobile; */
-    }
-    .nav-links:hover {
-      color: #fff;
-      font-size: 1.1rem;
-      border-radius: 0.1vw;
-      border-top: 0px;
-      border-right: 2px solid #fff;
-      border-left: 2px solid #fff;
     }
   }
