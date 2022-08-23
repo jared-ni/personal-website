@@ -62,7 +62,7 @@ function Project() {
                                 </div>
                             </div>
                             <div className="project-card-tech">
-                                React.js&emsp;CSS&emsp;Firebase&emsp;Heroku
+                                React.js&emsp;CSS&emsp;Firebase&emsp;Netlify
                             </div>
                             <div className="project-card-description">
                                 A survey-based matchmaking service for students at Harvard and 42 other colleges. Generated 235k matches and had 52k active users in 2022.                            
