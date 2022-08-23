@@ -18,9 +18,9 @@ function Contact() {
                     If you have opportunities related to software, or if you want to chat about technology, Harvard, or life in general, 
                     please feel free to reach out!
                 </div>
-                <button className="contact-email-button" onClick={() => window.location = 'mailto:jaredni@college.harvard.edu'}>
-                    Say Hi
-                </button>
+                <div className="contact-email-button" onClick={() => window.location = 'mailto:jaredni@college.harvard.edu'}>
+                    <span className="email-text">Say Hi</span>
+                </div>
 
                 <div className="contact-socials">
                     <a className="contact-social-button" href="https://github.com/milkteadj?tab=repositories" target="_blank" rel="noreferrer">
