@@ -5,13 +5,13 @@ import './Credit.css';
 
 
 function Credit() {
-
-    useEffect(() => {
-        axios.get("/datas").then(response => {
-            setDatas(response.data);
-            console.log("notes datas: " + datas[0].title);
-        });
-    })
+    return (
+        <div className="credit-container">
+            <div className="credit-center-container">
+                Designed &amp; Created by Jared Ni
+            </div>
+        </div>
+    );
 }
 
 export default Credit
