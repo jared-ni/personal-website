@@ -3,20 +3,12 @@ import '../App.css';
 import './Project.css';
 import { useState } from 'react';
 
-import axios from "axios";
-
 function Experience() {
 
     const [toggleState, setToggleState] = useState(1);
 
     const toggleTab = (index) => {
         setToggleState(index);
-        
-        const newNote = {
-            title: "try",
-            content: "input.content"
-        };
-        axios.post("http://localhost:3001/create", newNote);
     }
 
   return (
