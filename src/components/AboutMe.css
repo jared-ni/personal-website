@@ -78,9 +78,9 @@
     .aboutMeImage-wrapper::after {
       top: 0;
       left: 0;
-      background: #116466;
+      /* background: #ffcb9a; */
       opacity: 0.4;
-      filter: brightness(150%) contrast(500%) hue-rotate(20deg);
+      /* filter: brightness(150%) contrast(200%); */
       z-index: 1;
     } 
     .aboutMeImage-wrapper::before {
