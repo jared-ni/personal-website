@@ -23,7 +23,7 @@
     margin-bottom: 30px;
     font-family: 'Source Code Pro', monospace;
     color: #ffcb9a;
-    font-size: 35px;
+    font-size: var(--title-font-size);
     position: relative;
     width: max-content;
   }

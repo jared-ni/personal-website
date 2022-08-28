@@ -24,7 +24,7 @@
     margin-bottom: 30px;
     font-family: 'Source Code Pro', monospace;
     color: #ffcb9a;
-    font-size: 40px;
+    font-size: var(--title-font-size);
     position: relative;
     width: max-content;
     z-index: 10;
@@ -55,7 +55,7 @@
     font-family: 'Open Sans', sans-serif;
     width: 100%;
     max-width: 850px;
-    font-size: 20px;
+    font-size: var(--text-font-size);
   }
 
   .experience-wrapper-container {
@@ -75,7 +75,7 @@
   }
   
   .experience-tabs-container {
-    font-size: 15px;
+    font-size: var(--paragraph-font-size);
     width: 180px;
     flex-shrink: 0;
     position: relative;
@@ -84,7 +84,7 @@
 
   .tabs {
     background-color: #2c3531;
-    color: #c7c7c7;;
+    color: var(--paragraph-color);;
     text-align: left;
     font-size: inherit;
     padding: 15px;
@@ -126,14 +126,14 @@
     display: inline-block;
   }
   .experience-content-date {
-    font-size: 15px;
+    font-size: var(--paragraph-font-size);
     padding: 10px 0 10px 0;
-    color: #c7c7c7;
+    color: var(--paragraph-color);
   }
   .experience-content-description {
     margin-left: 30px;
     margin-top: 20px;
-    color: #c7c7c7;
+    color: var(--paragraph-color);
   }
   .experience-content-description::before {
     content: "▹";

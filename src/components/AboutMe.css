@@ -21,7 +21,7 @@
       margin-top: 0px;
       font-family: 'Source Code Pro', monospace;
       color: #ffcb9a;
-      font-size: 50px;
+      font-size: var(--title-font-size);
       position: relative;
       width: max-content;
       z-index: 10;
@@ -52,7 +52,7 @@
       z-index: inherit;
       max-width: 350px;
       width: 350px;
-      height: 90%;
+      height: 95%;
     }
 
     .aboutMeImage-wrapper {
@@ -107,11 +107,29 @@
       margin-top: 50px;
     }
     .aboutMe-p {
-      color: #fff;
+      color: var(--paragraph-color);
       font-family: 'Open Sans', sans-serif;
       width: 100%;
       max-width: 850px;
-      font-size: 20px;
+      font-size: var(--text-font-size);
+    }
+
+    .technology-list {
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(120px, 300px));
+      gap: 12px 20px;
+      padding-top: 20px;
+    }
+    li {
+      padding-left: 30px;
+      position: relative;
+    }
+    li::before {
+      content: "▹";
+      position: absolute;
+      left: 0px;
+      color: #ffcb9a;
     }
 
     
@@ -137,12 +155,12 @@
       }
 
       .aboutMe-h1 {
-        font-size: 50px;
+        font-size: var(--title-font-size);
         padding-left: 5vw;
       }
       .aboutMe-p {
         font-size: 20px;
-        padding: 5vw;
+        padding: 10% 5% 5% 5%;
       }
     }
   
@@ -158,11 +176,8 @@
         width: inherit;
         height: inherit;
       }
-      .aboutMe-h1 {
-        font-size: 10vw;
-      }
-      .aboutMe-p {
-        font-size: 5vw;
+      .technology-list {
+
       }
     }
     

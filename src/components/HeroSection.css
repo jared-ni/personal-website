@@ -138,7 +138,7 @@
   }
 
   .pp {
-    color: #fff;
+    color: var(--paragraph-color);
     font-family: 'Open Sans', sans-serif;
     font-size: 20px;
     margin-top: 50px;
@@ -152,7 +152,7 @@
   }
   .pp-points {
     align-items: left;
-    color: #fff;
+    color: var(--paragraph-color);
     width: fit-content;
     font-family: 'Open Sans', sans-serif;
     margin-top: 10px;
