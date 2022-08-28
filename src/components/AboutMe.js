@@ -26,22 +26,22 @@ function AboutMe() {
                     that I've been working with recently: 
                     <br />
                     <ul class="technology-list">
-                        <li>
+                        <li className="tech-li">
                             Java (Spring)
                         </li>
-                        <li>
+                        <li className="tech-li">
                             Python
                         </li>
-                        <li>
+                        <li className="tech-li">
                             JavaScript (React.js)
                         </li>
-                        <li>
+                        <li className="tech-li">
                             Node.js
                         </li>
-                        <li>
+                        <li className="tech-li">
                             MySQL
                         </li>
-                        <li>
+                        <li className="tech-li">
                             Firebase
                         </li>
                     </ul>

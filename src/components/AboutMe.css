@@ -121,11 +121,11 @@
       gap: 12px 20px;
       padding-top: 20px;
     }
-    li {
+    .tech-li {
       padding-left: 30px;
       position: relative;
     }
-    li::before {
+    .tech-li::before {
       content: "▹";
       position: absolute;
       left: 0px;
