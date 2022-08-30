@@ -41,6 +41,11 @@ function Experience() {
                         onClick={() => toggleTab(4)}>
                         The Harvard Crimson
                     </div>
+                    <div 
+                        className={toggleState === 5 ? "tabs active-tabs" : "tabs"}
+                        onClick={() => toggleTab(5)}>
+                        Pathway STEM Camp
+                    </div>
                 </div>
                 <div className="experience-content-container">
                     <div className={toggleState === 1 ? "content active-content" : "content"}>
@@ -128,6 +133,26 @@ function Experience() {
                         </div>
                         <div className="experience-content-description">
                             Helped updgrade the website to the latest versions of Django and React. Debugged 100+ dependency-related errors and refactored components using best engineering practices.
+                        </div>
+                    </div>
+                    <div className={toggleState === 5 ? "content active-content" : "content"}>
+                        <div className="experience-content-title">
+                            Project Organizer
+                            <span class="experience-content-company">
+                                &nbsp;@&nbsp;
+                                <a href="https://kawnchess.wixsite.com/stemcamp" target="_blank" rel="noreferrer" className="experience-content-company-link">
+                                    Pathway STEM Camp
+                                </a>
+                            </span>
+                        </div>
+                        <div className="experience-content-date">
+                            May 2020 — Sept. 2020
+                        </div>
+                        <div className="experience-content-description">
+                            Launched a free, virtual summer camp in 2020 for low-income middle and high school students in the Greater Seattle Area.
+                        </div>
+                        <div className="experience-content-description">
+                            Organized classes for 50 students, developed curriculums for Python, math, and natural sciences, and tutored students throughout the week for three months.
                         </div>
                     </div>
                 </div>
