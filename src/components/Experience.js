@@ -132,7 +132,7 @@ function Experience() {
                             Implement an array of features for the Harvard Crimson website and subscription service, including minigames, chatbots, and surveys.
                         </div>
                         <div className="experience-content-description">
-                            Helped updgrade the website to the latest versions of Django and React. Debugged 100+ dependency-related errors and refactored components using best engineering practices.
+                            Helped upgrade the website to the latest versions of Django and React. Debugged 100+ dependency-related errors and refactored components using best engineering practices.
                         </div>
                     </div>
                     <div className={toggleState === 5 ? "content active-content" : "content"}>
