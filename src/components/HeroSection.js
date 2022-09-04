@@ -12,7 +12,7 @@ function HeroSection() {
         </div>
         <h1 className="hero-h1">Hello World, my name is</h1> 
         <p>Jared Ni.</p>
-        <div className="pp">I am a rising sophomore at Harvard studying computer science and economics, 
+        <div className="pp">I am a sophomore at Harvard studying computer science and economics, 
             and my passion is building accessible and transformative software products. 
             Here are some interesting facts about me: 
         </div>
