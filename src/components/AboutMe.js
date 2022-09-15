@@ -17,9 +17,9 @@ function AboutMe() {
                 </div>
                 <div className='aboutMe-p' data-aos="fade-up">
                     Hello! My name is Jared and I am a first-gen college student from Seattle, WA. 
-                    I am a creative problem solver who loves designing and building software projects. My journey
-                    in CS started in early high school, after purchasing my first programming book (<i>Learning Python, 2nd Edition</i>) 
-                    from the local Goodwill because I had fun reading it in the book aisle. 
+                    I am a creative problem solver who loves designing and building accessible and impactful software products. 
+                    My journey in CS started in early high school, after purchasing my first programming book (<i>Learning Python, 2nd Edition</i>) 
+                    from the local Goodwill because I had fun skimming it in the book aisle. 
                     <br/><br/>
                     Fast forward to today, I have had the opportunity to explore my interests in software 
                     through a variety of courses, projects and internships. Here are some of the technologies 
@@ -27,13 +27,13 @@ function AboutMe() {
                     <br />
                     <ul class="technology-list">
                         <li className="tech-li">
-                            Java (Spring)
+                            Java (Spring Boot)
                         </li>
                         <li className="tech-li">
                             Python
                         </li>
                         <li className="tech-li">
-                            JavaScript (React.js)
+                            React.js
                         </li>
                         <li className="tech-li">
                             Node.js

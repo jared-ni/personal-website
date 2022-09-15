@@ -29,21 +29,26 @@ function Experience() {
                     <div 
                         className={toggleState === 2 ? "tabs active-tabs" : "tabs"}
                         onClick={() => toggleTab(2)}>
-                        Arda
+                        Harvard CS Department
                     </div>
                     <div 
                         className={toggleState === 3 ? "tabs active-tabs" : "tabs"}
                         onClick={() => toggleTab(3)}>
-                        Datamatch
+                        Arda
                     </div>
                     <div 
                         className={toggleState === 4 ? "tabs active-tabs" : "tabs"}
                         onClick={() => toggleTab(4)}>
-                        The Harvard Crimson
+                        Datamatch
                     </div>
                     <div 
                         className={toggleState === 5 ? "tabs active-tabs" : "tabs"}
                         onClick={() => toggleTab(5)}>
+                        The Harvard Crimson
+                    </div>
+                    <div 
+                        className={toggleState === 6 ? "tabs active-tabs" : "tabs"}
+                        onClick={() => toggleTab(6)}>
                         Pathway STEM Camp
                     </div>
                 </div>
@@ -63,16 +68,39 @@ function Experience() {
                             June 2022 — Aug. 2022 
                         </div>
                         <div className="experience-content-description">
-                            Created Java Spring backend service that fetches and processes channels, members, and conversations data from Microsoft Teams to store into the database and display on the company UI to wider groups of users in real time.
+                            Created Java Spring Boot backend service that channels conversational data and research notes published
+                            in Microsoft Teams into a database to display on an internal UI in real-time to thousands of employees.
                         </div>
                         <div className="experience-content-description"> 
-                            Designed and implemented multi-threaded scheduler bash processes that exponentially increased the time efficiency of data delivery.
+                            Exponentially improved time efficiency of data delivery by designing and implementing a multi-threaded
+                            bash process for data fetching and processing, reducing scheduler runtime by more than 40 seconds.
                         </div>
                         <div className="experience-content-description">
-                            Configured automation testing and Java Code Integration for the service using the Karate framework, established CI/CD pipeline; wrote extensive JUnit and endpoint tests to ensure code quality and coverage.
+                            Configured CI/CD pipeline using Jenkins and Karate testing framework.
+                        </div>
+                        <div className="experience-content-description">
+                            Improved project code coverage through writing 500+ lines of Junit and automation tests.
                         </div>
                     </div>
                     <div className={toggleState === 2 ? "content active-content" : "content"}>
+                        <div className="experience-content-title">
+                            CS Course Assistant
+                            <span class="experience-content-company">
+                                &nbsp;@&nbsp;
+                                <a href="https://cs50.harvard.edu/college/2022/fall/" target="_blank" rel="noreferrer" className="experience-content-company-link">
+                                    CS50: Introduction to Computer Science
+                                </a>
+                            </span>
+                        </div>
+                        <div className="experience-content-date">
+                            Aug. 2022 — Present
+                        </div>
+                        <div className="experience-content-description">
+                            Host tutorials and office hours for 30+ undergraduate students weekly, teaching core CS concepts such as
+                            algorithms and data structures and helping students develop algorithmic thinking using C and Python.
+                        </div>
+                    </div>
+                    <div className={toggleState === 3 ? "content active-content" : "content"}>
                         <div className="experience-content-title">
                             Android Software Developer
                             <span class="experience-content-company">
@@ -86,13 +114,20 @@ function Experience() {
                             Oct. 2021 — May 2022 
                         </div>
                         <div className="experience-content-description">
-                            Worked on Arda Deliver, a mobile healthcare application that allows clinics in rural Gambia to request vaccine supplies within the national healthcare supply chain and track the progress of vaccine drone deliveries. 
+                            Worked on Arda Deliver, an android app that allows medical clinics to request and track vaccine orders.
                         </div>
                         <div className="experience-content-description">
-                            Built frontend components and layouts using Java and Kotlin, designed UI/UX using Figma, and worked with user authentication and data storage using AWS Amplify. 
+                            App received $70k in initial funding and is currently being tested by The Gambian Ministry of Health.
+                        </div>
+                        <div className="experience-content-description">
+                            Engineered map layout using Mapbox SDK and implemented real-time tracking of drone-delivered orders
+                            using drones’ GPS coordinates.
+                        </div>
+                        <div className="experience-content-description">
+                            Designed most of the UI/UX by utilizing Figma and built app layouts using Java.
                         </div>
                     </div>
-                    <div className={toggleState === 3 ? "content active-content" : "content"}>
+                    <div className={toggleState === 4 ? "content active-content" : "content"}>
                         <div className="experience-content-title">
                             Software Developer
                             <span class="experience-content-company">
@@ -106,16 +141,21 @@ function Experience() {
                             Oct. 2021 — April 2022 
                         </div>
                         <div className="experience-content-description">
-                            Built a survey-based matchmaking service for students at Harvard and 42 other colleges. Generated 235k matches and had 52k active users in 2022.
+                            Engineered a survey-based matchmaking service used by students at Harvard and 42 other colleges.
                         </div>
                         <div className="experience-content-description">
-                            Implemented the business logic and frontend of the chat and user search components using React, built database infrastructure with Firebase Cloud Functions.
+                            App generated 235k matches and had 52k active users in 2022.
                         </div>
                         <div className="experience-content-description">
-                            Designed and engineered the “Red Flags” feature that improves user interaction by providing post-survey feedback and enabling sharing of survey results directly to social media sites. 
+                            Implemented the business logic and frontend of the chat and search box components using React, built
+                            database infrastructure with Firebase Cloud Functions.
+                        </div>
+                        <div className="experience-content-description">
+                            Designed and engineered a post-survey feedback feature that improves user interaction and enables
+                            sharing of survey results directly to social media sites.
                         </div>
                     </div>
-                    <div className={toggleState === 4 ? "content active-content" : "content"}>
+                    <div className={toggleState === 5 ? "content active-content" : "content"}>
                         <div className="experience-content-title">
                             Technology Associate
                             <span class="experience-content-company">
@@ -135,7 +175,7 @@ function Experience() {
                             Helped upgrade the website to the latest versions of Django and React. Debugged 100+ dependency-related errors and refactored components using best engineering practices.
                         </div>
                     </div>
-                    <div className={toggleState === 5 ? "content active-content" : "content"}>
+                    <div className={toggleState === 6 ? "content active-content" : "content"}>
                         <div className="experience-content-title">
                             Project Organizer
                             <span class="experience-content-company">

@@ -12,8 +12,8 @@ function HeroSection() {
         </div>
         <h1 className="hero-h1">Hello World, my name is</h1> 
         <p>Jared Ni.</p>
-        <div className="pp">I am a sophomore at Harvard studying computer science and economics, 
-            and my passion is building accessible and transformative software products. 
+        <div className="pp">I am a first-generation college student studying computer science and economics at Harvard, 
+            and I love building accessible and impactful software products. 
             Here are some interesting facts about me: 
         </div>
         <div className="pp-points-container">
@@ -22,11 +22,15 @@ function HeroSection() {
                     &nbsp; <i class="fa-solid fa-heart"></i> 
             </div>
             <div className="pp-points"> 
-                I designed and programmed the frontend of a mobile drone-delivery app at a start-up 
+                As a SWE intern, I created a Backend Service for fetching, processing, and displaying financial research data
+                    &nbsp; <i class="fa-solid fa-comments-dollar"></i>
+            </div>
+            <div className="pp-points"> 
+                I designed and programmed the frontend of a start-up's healthcare drone-delivery app
                     &nbsp; <i class="fa-solid fa-helicopter"></i>
             </div>
             <div className="pp-points">
-                Favorite Harvard course so far: CS20 Discrete Mathematics for Computer Science &nbsp; <i class="fa-solid fa-share-nodes"></i>
+                Favorite Harvard course so far: CS61: Systems Programming and Machine Organization &nbsp; <i class="fa-solid fa-code"></i>
             </div>
         </div>
         </div>
