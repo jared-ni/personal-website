@@ -22,38 +22,43 @@ function Experience() {
             <div className="experience-table" data-aos="fade-up">
                 <div className="experience-tabs-container">
                     <div 
-                        className={toggleState === 1 ? "tabs active-tabs" : "tabs"}
-                        onClick={() => toggleTab(1)}>
+                        className={toggleState === 7 ? "tabs active-tabs" : "tabs"}
+                        onClick={() => toggleTab(7)}>
                         Fidelity Investments
-                    </div>
-                    <div 
-                        className={toggleState === 2 ? "tabs active-tabs" : "tabs"}
-                        onClick={() => toggleTab(2)}>
-                        Harvard CS Department
-                    </div>
-                    <div 
-                        className={toggleState === 3 ? "tabs active-tabs" : "tabs"}
-                        onClick={() => toggleTab(3)}>
-                        Arda
-                    </div>
-                    <div 
-                        className={toggleState === 4 ? "tabs active-tabs" : "tabs"}
-                        onClick={() => toggleTab(4)}>
-                        Datamatch
-                    </div>
-                    <div 
-                        className={toggleState === 5 ? "tabs active-tabs" : "tabs"}
-                        onClick={() => toggleTab(5)}>
-                        The Harvard Crimson
                     </div>
                     <div 
                         className={toggleState === 6 ? "tabs active-tabs" : "tabs"}
                         onClick={() => toggleTab(6)}>
+                        HCS Tech for Social Good
+                    </div>
+                    <div 
+                        className={toggleState === 5 ? "tabs active-tabs" : "tabs"}
+                        onClick={() => toggleTab(5)}>
+                        Harvard CS Department
+                    </div>
+                    <div 
+                        className={toggleState === 4 ? "tabs active-tabs" : "tabs"}
+                        onClick={() => toggleTab(4)}>
+                        Arda
+                    </div>
+                    <div 
+                        className={toggleState === 3 ? "tabs active-tabs" : "tabs"}
+                        onClick={() => toggleTab(3)}>
+                        Datamatch
+                    </div>
+                    <div 
+                        className={toggleState === 2 ? "tabs active-tabs" : "tabs"}
+                        onClick={() => toggleTab(2)}>
+                        The Harvard Crimson
+                    </div>
+                    <div 
+                        className={toggleState === 1 ? "tabs active-tabs" : "tabs"}
+                        onClick={() => toggleTab(1)}>
                         Pathway STEM Camp
                     </div>
                 </div>
                 <div className="experience-content-container">
-                    <div className={toggleState === 1 ? "content active-content" : "content"}>
+                    <div className={toggleState === 7 ? "content active-content" : "content"}>
                         <div className="experience-content-title">
                             Software Engineer Intern 
                             <span class="experience-content-company">
@@ -82,7 +87,34 @@ function Experience() {
                             Improved project code coverage through writing 500+ lines of Junit and automation tests.
                         </div>
                     </div>
-                    <div className={toggleState === 2 ? "content active-content" : "content"}>
+                    <div className={toggleState === 6 ? "content active-content" : "content"}>
+                        <div className="experience-content-title">
+                            Software Engineer
+                            <span class="experience-content-company">
+                                &nbsp;@&nbsp;
+                                <a href="https://socialgood.hcs.harvard.edu/" target="_blank" rel="noreferrer" className="experience-content-company-link">
+                                    Harvard Tech for Social Good
+                                </a>
+                            </span>
+                        </div>
+
+                        <div className="experience-content-date">
+                            Sept. 2022 — Present
+                        </div>
+                        <div className="experience-content-description">
+                            Partnered with&nbsp;
+                            <a href="https://okayso.org/" target="_blank" rel="noreferrer" className="experience-content-company-link">
+                                OkaySo
+                            </a>
+                            : Developing a full-stack web portal with React and Node.js that connects thousands of young adult users with
+                            OkaySo’s trusted experts.
+                        </div>
+                        <div className="experience-content-description">
+                            App allows users to communicate confidentially in real-time and receive expert advice
+                            on topics related to identity, relationships, and mental and physical health.
+                        </div>
+                    </div>
+                    <div className={toggleState === 5 ? "content active-content" : "content"}>
                         <div className="experience-content-title">
                             CS Course Assistant
                             <span class="experience-content-company">
@@ -100,7 +132,7 @@ function Experience() {
                             algorithms and data structures and helping students develop algorithmic thinking using C and Python.
                         </div>
                     </div>
-                    <div className={toggleState === 3 ? "content active-content" : "content"}>
+                    <div className={toggleState === 4 ? "content active-content" : "content"}>
                         <div className="experience-content-title">
                             Android Software Developer
                             <span class="experience-content-company">
@@ -127,7 +159,7 @@ function Experience() {
                             Designed most of the UI/UX by utilizing Figma and built app layouts using Java.
                         </div>
                     </div>
-                    <div className={toggleState === 4 ? "content active-content" : "content"}>
+                    <div className={toggleState === 3 ? "content active-content" : "content"}>
                         <div className="experience-content-title">
                             Software Developer
                             <span class="experience-content-company">
@@ -155,7 +187,7 @@ function Experience() {
                             sharing of survey results directly to social media sites.
                         </div>
                     </div>
-                    <div className={toggleState === 5 ? "content active-content" : "content"}>
+                    <div className={toggleState === 2 ? "content active-content" : "content"}>
                         <div className="experience-content-title">
                             Technology Associate
                             <span class="experience-content-company">
@@ -175,7 +207,7 @@ function Experience() {
                             Helped upgrade the website to the latest versions of Django and React. Debugged 100+ dependency-related errors and refactored components using best engineering practices.
                         </div>
                     </div>
-                    <div className={toggleState === 6 ? "content active-content" : "content"}>
+                    <div className={toggleState === 1 ? "content active-content" : "content"}>
                         <div className="experience-content-title">
                             Project Organizer
                             <span class="experience-content-company">
