@@ -5,7 +5,7 @@ import { useState } from 'react';
 
 function Experience() {
 
-    const [toggleState, setToggleState] = useState(1);
+    const [toggleState, setToggleState] = useState(7);
 
     const toggleTab = (index) => {
         setToggleState(index);
