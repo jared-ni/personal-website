@@ -23,7 +23,7 @@ function Contact() {
                 </div>
 
                 <div className="contact-socials">
-                    <a className="contact-social-button" href="https://github.com/milkteadj?tab=repositories" target="_blank" rel="noreferrer">
+                    <a className="contact-social-button" href="https://github.com/jared-ni" target="_blank" rel="noreferrer">
                         <i class="fa-brands fa-github contact-social-icon"></i>
                     </a>
                     <a className="contact-social-button" href="https://www.linkedin.com/in/jaredhn/" target="_blank" rel="noreferrer">
