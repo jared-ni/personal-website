@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import { HashLink } from 'react-router-hash-link';
 import './Navbar.css';
-import Resume from "../resume.pdf";
+import Resume from '../resume.pdf';
 
 
 function Navbar() {
