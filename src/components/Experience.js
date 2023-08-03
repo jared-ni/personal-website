@@ -22,29 +22,44 @@ function Experience() {
             <div className="experience-table" data-aos="fade-up">
                 <div className="experience-tabs-container">
                     <div 
+                        className={toggleState === 10 ? "tabs active-tabs" : "tabs"}
+                        onClick={() => toggleTab(7)}>
+                        Salesforce
+                    </div>
+                    <div 
+                        className={toggleState === 9 ? "tabs active-tabs" : "tabs"}
+                        onClick={() => toggleTab(7)}>
+                        Harvard Edge Computing Lab
+                    </div>
+                    <div 
+                        className={toggleState === 8 ? "tabs active-tabs" : "tabs"}
+                        onClick={() => toggleTab(7)}>
+                        Harvard University CS61
+                    </div>
+                    <div 
                         className={toggleState === 7 ? "tabs active-tabs" : "tabs"}
                         onClick={() => toggleTab(7)}>
-                        Fidelity Investments
+                        Datamatch
                     </div>
                     <div 
                         className={toggleState === 6 ? "tabs active-tabs" : "tabs"}
                         onClick={() => toggleTab(6)}>
-                        HCS Tech for Social Good
+                        Harvard University CS50
                     </div>
                     <div 
                         className={toggleState === 5 ? "tabs active-tabs" : "tabs"}
                         onClick={() => toggleTab(5)}>
-                        Harvard CS Department
+                        Fidelity Investments
                     </div>
                     <div 
                         className={toggleState === 4 ? "tabs active-tabs" : "tabs"}
                         onClick={() => toggleTab(4)}>
-                        Arda
+                        Arda Impact
                     </div>
                     <div 
                         className={toggleState === 3 ? "tabs active-tabs" : "tabs"}
                         onClick={() => toggleTab(3)}>
-                        Datamatch
+                        Harvard Tech for Social Good
                     </div>
                     <div 
                         className={toggleState === 2 ? "tabs active-tabs" : "tabs"}
@@ -57,8 +72,126 @@ function Experience() {
                         Pathway STEM Camp
                     </div>
                 </div>
+
                 <div className="experience-content-container">
+                    <div className={toggleState === 10 ? "content active-content" : "content"}>
+                        <div className="experience-content-title">
+                            Software Engineer Intern 
+                            <span class="experience-content-company">
+                                &nbsp;@&nbsp;
+                                <a href="https://www.salesforce.com/" target="_blank" rel="noreferrer" className="experience-content-company-link">
+                                    Salesforce
+                                </a>
+                            </span>
+                        </div>
+                        <div className="experience-content-date">
+                            June 2023 — Aug. 2023
+                        </div>
+                        <div className="experience-content-description">
+                            Architected the integration of a runtime vulnerability scanner into cloud security infrastructure, 
+                             utilizing Docker to containerize API for scalable runtime vulnerability testing of hundreds of Salesforce web domains.
+                        </div>
+                        <div className="experience-content-description"> 
+                            Engineered scanner executor and receiver libraries interfaced with AWS to perform security scans, 
+                            generating 50+ Gigabytes of alert data weekly to help product teams identify and patch app vulnerabilities and 
+                            ensure the safety of customer data.
+                        </div>
+                        <div className="experience-content-description">
+                            Creating a robust data pipeline parser that cleans and sanitizes data for training machine learning models focused on security detection, analysis, and assessment.
+                        </div>
+                    </div>
+
+                    <div className={toggleState === 9 ? "content active-content" : "content"}>
+                        <div className="experience-content-title">
+                            Machine Learning Research Assistant
+                            <span class="experience-content-company">
+                                &nbsp;@&nbsp;
+                                <a href="https://github.com/srivatsankrishnan/oss-arch-gym" target="_blank" rel="noreferrer" className="experience-content-company-link">
+                                    Harvard Edge Computing Lab
+                                </a>
+                            </span>
+                        </div>
+
+                        <div className="experience-content-date">
+                            Feb. 2023 — Present
+                        </div>
+                        <div className="experience-content-description">
+                            Created an OpenAI Gym Environment for incorporating ML agents and a distributed deep learning simulator 
+                            to study architectural design space exploration, navigating more than 10^51 combinations of parameters.
+                        </div>
+                        <div className="experience-content-description"> 
+                            Engineered and incorporated a variety of bio-inspired, probabilistic, and reinforcement learning algorithms as environment agents.
+                        </div>
+                        <div className="experience-content-description">
+                            Conducting experiments on the accuracy of ML agents using manually-calculated results as benchmarks.
+                        </div>
+                    </div>
+
+                    <div className={toggleState === 8 ? "content active-content" : "content"}>
+                        <div className="experience-content-title">
+                            Teaching Fellow
+                            <span class="experience-content-company">
+                                &nbsp;@&nbsp;
+                                <a href="https://cs61.seas.harvard.edu/" target="_blank" rel="noreferrer" className="experience-content-company-link">
+                                    CS 61: Systems Programming and Machine Organization
+                                </a>
+                            </span>
+                        </div>
+
+                        <div className="experience-content-date">
+                            Aug. 2023 — Present
+                        </div>
+                        <div className="experience-content-description">
+                            Come back later for more details!
+                        </div>
+                    </div>
+
                     <div className={toggleState === 7 ? "content active-content" : "content"}>
+                        <div className="experience-content-title">
+                            Team Lead
+                            <span class="experience-content-company">
+                                &nbsp;@&nbsp;
+                                <a href="https://datamatch.me/" target="_blank" rel="noreferrer" className="experience-content-company-link">
+                                    Datamatch
+                                </a>
+                            </span>
+                        </div>
+                        <div className="experience-content-date">
+                            Oct. 2021 — Present
+                        </div>
+                        <div className="experience-content-description">
+                            Co-led a team of 20 developers for the largest college matchmaking app in the US, with 52k users and 235k matches.
+                        </div>
+                        <div className="experience-content-description">
+                            Engineered messaging, authentication, and various landing pages using React and Firebase Cloud Functions.
+                        </div>
+                        <div className="experience-content-description">
+                            Implemented social media integration using graph APIs, enabling thousands to share to various social media sites directly.
+                        </div>
+                    </div>
+
+
+                    <div className={toggleState === 6 ? "content active-content" : "content"}>
+                        <div className="experience-content-title">
+                            CS Course Assistant
+                            <span class="experience-content-company">
+                                &nbsp;@&nbsp;
+                                <a href="https://cs50.harvard.edu/college/2022/fall/" target="_blank" rel="noreferrer" className="experience-content-company-link">
+                                    CS50: Introduction to Computer Science
+                                </a>
+                            </span>
+                        </div>
+                        <div className="experience-content-date">
+                            Aug. 2022 — Dec. 2022
+                        </div>
+                        <div className="experience-content-description">
+                            Host tutorials and office hours for 30+ undergraduate students weekly, teaching core CS concepts such as
+                            algorithms and data structures and helping students develop algorithmic thinking using C and Python.
+                        </div>
+                    </div>
+
+
+                    <div className={toggleState === 5 ? "content active-content" : "content"}>
                         <div className="experience-content-title">
                             Software Engineer Intern 
                             <span class="experience-content-company">
@@ -73,21 +206,15 @@ function Experience() {
                             June 2022 — Aug. 2022 
                         </div>
                         <div className="experience-content-description">
-                            Created Java Spring Boot backend service that channels conversational data and research notes published
-                            in Microsoft Teams into a database to display on an internal UI in real-time to thousands of employees.
+                            Migrated proprietary research data accessed by hundreds of financial analysts from 500+ Microsoft Teams 
+                            channels to AWS cloud by creating a Java Spring Boot service with 90%+ code coverage and automated CI/CD pipeline.
                         </div>
                         <div className="experience-content-description"> 
-                            Exponentially improved time efficiency of data delivery by designing and implementing a multi-threaded
-                            bash process for data fetching and processing, reducing scheduler runtime by more than 40 seconds.
-                        </div>
-                        <div className="experience-content-description">
-                            Configured CI/CD pipeline using Jenkins and Karate testing framework.
-                        </div>
-                        <div className="experience-content-description">
-                            Improved project code coverage through writing 500+ lines of Junit and automation tests.
+                            Reduced service latency by 75% by designing and implementing a parallel scheduler program for efficient data fetching and processing.
                         </div>
                     </div>
-                    <div className={toggleState === 6 ? "content active-content" : "content"}>
+                    
+                    <div className={toggleState === 4 ? "content active-content" : "content"}>
                         <div className="experience-content-title">
                             Software Engineer
                             <span class="experience-content-company">
@@ -114,31 +241,14 @@ function Experience() {
                             on topics related to identity, relationships, and mental and physical health.
                         </div>
                     </div>
-                    <div className={toggleState === 5 ? "content active-content" : "content"}>
-                        <div className="experience-content-title">
-                            CS Course Assistant
-                            <span class="experience-content-company">
-                                &nbsp;@&nbsp;
-                                <a href="https://cs50.harvard.edu/college/2022/fall/" target="_blank" rel="noreferrer" className="experience-content-company-link">
-                                    CS50: Introduction to Computer Science
-                                </a>
-                            </span>
-                        </div>
-                        <div className="experience-content-date">
-                            Aug. 2022 — Present
-                        </div>
-                        <div className="experience-content-description">
-                            Host tutorials and office hours for 30+ undergraduate students weekly, teaching core CS concepts such as
-                            algorithms and data structures and helping students develop algorithmic thinking using C and Python.
-                        </div>
-                    </div>
-                    <div className={toggleState === 4 ? "content active-content" : "content"}>
+                    
+                    <div className={toggleState === 3 ? "content active-content" : "content"}>
                         <div className="experience-content-title">
                             Android Software Developer
                             <span class="experience-content-company">
                                 &nbsp;@&nbsp;
                                 <a href="https://www.ardaimpact.com/" target="_blank" rel="noreferrer" className="experience-content-company-link">
-                                    Arda
+                                    Arda Impact
                                 </a>
                             </span>
                         </div>
@@ -146,47 +256,14 @@ function Experience() {
                             Oct. 2021 — May 2022 
                         </div>
                         <div className="experience-content-description">
-                            Worked on Arda Deliver, an android app that allows medical clinics to request and track vaccine orders.
+                            Designed, engineered, and delivered an Android application used by hospitals and clinics in The Gambia to request and 
+                            track drone-delivered medical supplies in real-time, connected to Arda’s drone flight-control backend system.
                         </div>
                         <div className="experience-content-description">
-                            App received $70k in initial funding and is currently being tested by The Gambian Ministry of Health.
-                        </div>
-                        <div className="experience-content-description">
-                            Engineered map layout using Mapbox SDK and implemented real-time tracking of drone-delivered orders
-                            using drones’ GPS coordinates.
-                        </div>
-                        <div className="experience-content-description">
-                            Designed most of the UI/UX by utilizing Figma and built app layouts using Java.
+                            App received $70k in initial funding, in partnership with The Gambian Ministry of Health and Medical Research Council UK.
                         </div>
                     </div>
-                    <div className={toggleState === 3 ? "content active-content" : "content"}>
-                        <div className="experience-content-title">
-                            Software Developer
-                            <span class="experience-content-company">
-                                &nbsp;@&nbsp;
-                                <a href="https://datamatch.me/" target="_blank" rel="noreferrer" className="experience-content-company-link">
-                                    Datamatch
-                                </a>
-                            </span>
-                        </div>
-                        <div className="experience-content-date">
-                            Oct. 2021 — April 2022 
-                        </div>
-                        <div className="experience-content-description">
-                            Engineered a survey-based matchmaking service used by students at Harvard and 42 other colleges.
-                        </div>
-                        <div className="experience-content-description">
-                            App generated 235k matches and had 52k active users in 2022.
-                        </div>
-                        <div className="experience-content-description">
-                            Implemented the business logic and frontend of the chat and search box components using React, built
-                            database infrastructure with Firebase Cloud Functions.
-                        </div>
-                        <div className="experience-content-description">
-                            Designed and engineered a post-survey feedback feature that improves user interaction and enables
-                            sharing of survey results directly to social media sites.
-                        </div>
-                    </div>
+                    
                     <div className={toggleState === 2 ? "content active-content" : "content"}>
                         <div className="experience-content-title">
                             Technology Associate

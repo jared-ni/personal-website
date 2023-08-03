@@ -24,7 +24,7 @@ function HeroSection() {
             </div>
             <div className="pp-points"> 
                 Machine Learning research at Harvard Edge Computing Lab, creating a reinforcement framework for computer architectural design
-                    &nbsp; <i class="fa-solid fa-user-shield"></i>
+                    &nbsp; <i class="fa-solid fa-brain"></i>
             </div>
             <div className="pp-points">
                 Systems Oncology Research at Mass-General, correlating morphology with treatment resistance in pancreatic cancer cells
