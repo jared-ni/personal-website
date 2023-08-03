@@ -23,17 +23,17 @@ function Experience() {
                 <div className="experience-tabs-container">
                     <div 
                         className={toggleState === 10 ? "tabs active-tabs" : "tabs"}
-                        onClick={() => toggleTab(7)}>
+                        onClick={() => toggleTab(10)}>
                         Salesforce
                     </div>
                     <div 
                         className={toggleState === 9 ? "tabs active-tabs" : "tabs"}
-                        onClick={() => toggleTab(7)}>
+                        onClick={() => toggleTab(9)}>
                         Harvard Edge Computing Lab
                     </div>
                     <div 
                         className={toggleState === 8 ? "tabs active-tabs" : "tabs"}
-                        onClick={() => toggleTab(7)}>
+                        onClick={() => toggleTab(8)}>
                         Harvard University CS61
                     </div>
                     <div 
