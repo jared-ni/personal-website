@@ -5,6 +5,9 @@ import MyWebsite from '../images/my-website.png';
 import Napchat from '../images/napchat.png';
 import Datamatch from '../images/datamatch.png';
 import MiniML from '../images/miniML.png';
+import MRI from '../images/MRI.jpeg';
+import STRESS from '../images/STRESS.png';
+import archgym from '../images/archgym.png';
 
 function Project() {
 
@@ -21,7 +24,7 @@ function Project() {
                     <a href="https://github.com/jared-ni/oss-arch-gym" target="_blank" rel="noreferrer"
                         className="project-card">
                         <div className="project-card-logo-wrapper">
-                            <img className="project-card-logo" src={MyWebsite} alt="project preview"/>
+                            <img className="project-card-logo" src={archgym} alt="project preview"/>
                         </div>
                         
                         <div className="project-card-overlay">
@@ -48,7 +51,7 @@ function Project() {
                     <a href="https://github.com/jared-ni" target="_blank" rel="noreferrer"
                         className="project-card">
                         <div className="project-card-logo-wrapper">
-                            <img className="project-card-logo" src={MyWebsite} alt="project preview"/>
+                            <img className="project-card-logo" src={MRI} alt="project preview"/>
                         </div>
                         
                         <div className="project-card-overlay">
@@ -76,7 +79,7 @@ function Project() {
                     <a href="https://github.com/jared-ni/STRESS-cs262-final" target="_blank" rel="noreferrer"
                         className="project-card">
                         <div className="project-card-logo-wrapper">
-                            <img className="project-card-logo" src={MyWebsite} alt="project preview"/>
+                            <img className="project-card-logo" src={STRESS} alt="project preview"/>
                         </div>
                         
                         <div className="project-card-overlay">
