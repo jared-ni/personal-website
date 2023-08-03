@@ -18,6 +18,89 @@ function Project() {
 
             <div className="project-table" data-aos="fade-up">
                 <li>
+                    <a href="https://github.com/jared-ni/oss-arch-gym" target="_blank" rel="noreferrer"
+                        className="project-card">
+                        <div className="project-card-logo-wrapper">
+                            <img className="project-card-logo" src={MyWebsite} alt="project preview"/>
+                        </div>
+                        
+                        <div className="project-card-overlay">
+                            <div className="project-card-header">
+                                <div className="project-card-name">
+                                    Arch Gym - Astra-sim
+                                </div>
+                                <div className="project-card-buttons">
+                                    <a href="https://github.com/jared-ni/oss-arch-gym" target="_blank" rel="noreferrer">
+                                        <i class="fa-brands fa-github project-card-button-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div className="project-card-tech">
+                                Python&emsp;OpenAI Gym&emsp;Shell
+                            </div>
+                            <div className="project-card-description">
+                                Gym Environment for ML agents and a deep learning simulator to study architectural design space exploration.
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/jared-ni" target="_blank" rel="noreferrer"
+                        className="project-card">
+                        <div className="project-card-logo-wrapper">
+                            <img className="project-card-logo" src={MyWebsite} alt="project preview"/>
+                        </div>
+                        
+                        <div className="project-card-overlay">
+                            <div className="project-card-header">
+                                <div className="project-card-name">
+                                    Brain Tumor Diagnosis and Classification Model
+                                </div>
+                                <div className="project-card-buttons">
+                                    <a href="https://github.com/jared-ni" target="_blank" rel="noreferrer">
+                                        <i class="fa-brands fa-github project-card-button-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div className="project-card-tech">
+                                TensorFlow&emsp;Python&emsp;Convolutional Neural Network
+                            </div>
+                            <div className="project-card-description">
+                                Diagnoses and classifies brain tumors using patient MRI data with 97% accuracy.
+                            </div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://github.com/jared-ni/STRESS-cs262-final" target="_blank" rel="noreferrer"
+                        className="project-card">
+                        <div className="project-card-logo-wrapper">
+                            <img className="project-card-logo" src={MyWebsite} alt="project preview"/>
+                        </div>
+                        
+                        <div className="project-card-overlay">
+                            <div className="project-card-header">
+                                <div className="project-card-name">
+                                    Stationary T-Stop Railing Emergency Siren System (STRESS)
+                                </div>
+                                <div className="project-card-buttons">
+                                    <a href="https://github.com/jared-ni/STRESS-cs262-final" target="_blank" rel="noreferrer">
+                                        <i class="fa-brands fa-github project-card-button-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div className="project-card-tech">
+                                Python&emsp;C++&emsp;gPRC&emsp;Arduino
+                            </div>
+                            <div className="project-card-description">
+                                Distributed client-server system to ensure railway safety and prevent tragedies.
+                            </div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
                     <a href="https://jaredni.com" target="_blank" rel="noreferrer"
                         className="project-card">
                         <div className="project-card-logo-wrapper">

@@ -54,12 +54,12 @@ function Experience() {
                     <div 
                         className={toggleState === 4 ? "tabs active-tabs" : "tabs"}
                         onClick={() => toggleTab(4)}>
-                        Arda Impact
+                        Harvard Tech for Social Good
                     </div>
                     <div 
                         className={toggleState === 3 ? "tabs active-tabs" : "tabs"}
                         onClick={() => toggleTab(3)}>
-                        Harvard Tech for Social Good
+                        Arda Impact
                     </div>
                     <div 
                         className={toggleState === 2 ? "tabs active-tabs" : "tabs"}
