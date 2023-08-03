@@ -30,7 +30,7 @@ function Project() {
                         <div className="project-card-overlay">
                             <div className="project-card-header">
                                 <div className="project-card-name">
-                                    Arch Gym - Astra-sim
+                                    ArchGym Astra-sim
                                 </div>
                                 <div className="project-card-buttons">
                                     <a href="https://github.com/jared-ni/oss-arch-gym" target="_blank" rel="noreferrer">
@@ -57,7 +57,7 @@ function Project() {
                         <div className="project-card-overlay">
                             <div className="project-card-header">
                                 <div className="project-card-name">
-                                    Brain Tumor Diagnosis and Classification Model
+                                    Brain Tumor Classification
                                 </div>
                                 <div className="project-card-buttons">
                                     <a href="https://github.com/jared-ni" target="_blank" rel="noreferrer">
@@ -85,7 +85,7 @@ function Project() {
                         <div className="project-card-overlay">
                             <div className="project-card-header">
                                 <div className="project-card-name">
-                                    Stationary T-Stop Railing Emergency Siren System (STRESS)
+                                    STRESS
                                 </div>
                                 <div className="project-card-buttons">
                                     <a href="https://github.com/jared-ni/STRESS-cs262-final" target="_blank" rel="noreferrer">
