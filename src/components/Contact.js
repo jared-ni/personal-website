@@ -14,8 +14,8 @@ function Contact() {
                     Let's connect!
                 </div>
                 <div className="contact-p">
-                    I'm currently looking for openings for this winter and summer 2023. <br />
-                    If you have opportunities related to software, or if you want to chat about technology, Harvard, or life in general, 
+                    I'm currently looking for openings for winter 2023 and Summer 2024. <br />
+                    If you have opportunities related to software, machine learning, or life sciences, or if you'd like to chat about other things, 
                     please feel free to reach out!
                 </div>
                 <div className="contact-email-button" onClick={() => window.location = 'mailto:jaredni@college.harvard.edu'}>
