@@ -16,34 +16,26 @@ function AboutMe() {
                     </div>
                 </div>
                 <div className='aboutMe-p' data-aos="fade-up">
-                    Hello! My name is Jared and I am a first-gen college student from Seattle, WA. 
-                    I am a creative problem solver who loves designing and building accessible and impactful software products. 
-                    My journey in CS started in early high school, after purchasing my first programming book (<i>Learning Python, 2nd Edition</i>) 
-                    from the local Goodwill because I had fun skimming it in the book aisle. 
+                    Hello! I'm a rising junior at Harvard from Seattle, WA. 
+                    Besides problem solving, learning new things, and building cool stuff, I enjoy hiking, photography, and board games. 
+
                     <br/><br/>
-                    Fast forward to today, I have had the opportunity to explore my interests in software 
-                    through a variety of courses, projects and internships. Here are some of the technologies 
-                    that I've been working with recently: 
+                    You can checkout my resume for a more-complete skillset. Here are some I used recently: 
                     <br />
                     <ul class="technology-list">
                         <li className="tech-li">
-                            Java (Spring Boot)
+                            Project Management (Agile, technical, and research)
                         </li>
                         <li className="tech-li">
-                            Python
+                            Deep Learning (TensorFlow, PyTorch)
                         </li>
                         <li className="tech-li">
-                            React.js
+                            Backend Development (Java, Python, C++)
                         </li>
                         <li className="tech-li">
-                            Node.js
+                            Cloud infrastructure (AWS, Docker, Kubernetes)
                         </li>
-                        <li className="tech-li">
-                            MySQL
-                        </li>
-                        <li className="tech-li">
-                            Firebase
-                        </li>
+                        
                     </ul>
 
                 </div>
