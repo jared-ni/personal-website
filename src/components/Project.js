@@ -57,7 +57,7 @@ function Project() {
                         <div className="project-card-overlay">
                             <div className="project-card-header">
                                 <div className="project-card-name">
-                                    Brain Tumor Classification
+                                    Brain Tumor Classificer
                                 </div>
                                 <div className="project-card-buttons">
                                     <a href="https://github.com/jared-ni" target="_blank" rel="noreferrer">
