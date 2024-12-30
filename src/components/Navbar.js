@@ -69,11 +69,7 @@ function Navbar() {
                             Contact
                         </HashLink>
                     </li>
-                    <div className={click ? "nav-item nav-resume active" : "nav-resume"}>
-                        <a className={click ? "resume-link active" : "resume-link"} download="Jared_Ni_Resume">
-                            Resume
-                        </a>
-                    </div>
+                
                 </ul>
 
 
