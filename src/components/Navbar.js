@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import { HashLink } from 'react-router-hash-link';
 import './Navbar.css';
-import Resume from '../resume.pdf';
+// import Resume from '../resume.pdf';
 
 
 function Navbar() {
@@ -70,7 +70,7 @@ function Navbar() {
                         </HashLink>
                     </li>
                     <div className={click ? "nav-item nav-resume active" : "nav-resume"}>
-                        <a className={click ? "resume-link active" : "resume-link"} href={Resume} download="Jared_Ni_Resume">
+                        <a className={click ? "resume-link active" : "resume-link"} download="Jared_Ni_Resume">
                             Resume
                         </a>
                     </div>
